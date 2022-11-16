@@ -40,21 +40,87 @@ for (let i = 0; i < students.length; i++) {
 // в for i не нужно было объявлять заранее - тут нужно. i++ идет в теле
 // пример while с такими же задачами как for выше
 
+let i = 0;
 
+while (i < 7) {
+console.log(i);
+i++;
+}
 
+let clients = ['eugene', 'luzik', 'artyom'];
+
+showClients = 0; // обычно делают i = 0, но просто выше уже пользовались такой переменной, поэтому я решил взять другую говоряющую переменную
+
+while (showClients < clients.length) {
+    console.log(clients[showClients]);
+    showClients++;
+}
 
 // do while loop просто дополнение к while
 // нужен чтобы хотя бы раз выполнить итерацию даже если она по условию не должна случиться
 
+let u = 3; // i была занята выше
 
+do {
+    console.log(u);
+    u++;
+} while (u < 1); // несмотря на то, что u больше 1, один раз все равно выполнится
 
 
 // if (condition) statement
-// 
+// попробуем проверить длину пароль
 
+let password = 'pass';
 
+if (password.length > 3 ) {
+    console.log('your password length is correct');
+}
 
+//если будет в переменной password больше 3 символов, то сообщение выведется в консоль
 
+// теперь условие больше с else
 
+let username = "mydeepsix";
 
+if (username.length > 6) {
+    console.log ('you have a good username');
+} else {
+    console.log ('you have a bad username');
+}
 
+// теперь условие больше с else if
+
+let email = 'mydeepsix@ya.ru';
+
+if (email.includes('@')) { //метод include проверяет есть ли такой символ
+    console.log('you have a correct email');
+} else if (email.includes ('#')) {
+    console.log('you cannot use #');
+} else {
+    console.log('your email is strange');
+}
+// все работает, можно в переменную email подставлять разные штуки из условий и все сработае
+
+// logical operators
+// || - or; && - and
+
+// пратика с || - or
+let age = 18;
+
+if (age == 18 || age == 24) {
+    console.log('your age is right');
+} else {
+    console.log('your age is not 14 or 24');
+}
+
+// пратика с && - and
+
+let surname = 'nesterov';
+
+if (surname = 'nesterov' && surname.includes('v')) {
+    console.log('yes, surname is correct');
+} else {
+    console.log('you have not typed nesterov');
+}
+
+// logical not

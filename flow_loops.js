@@ -6,7 +6,7 @@
 // синтаксис 
 
 for (let i = 0; i < 5; i++) {
- console.log('in loop:', i);
+    console.log('in loop:', i);
 }
 
 console.log('loop is finished');
@@ -43,8 +43,8 @@ for (let i = 0; i < students.length; i++) {
 let i = 0;
 
 while (i < 7) {
-console.log(i);
-i++;
+    console.log(i);
+    i++;
 }
 
 let clients = ['eugene', 'luzik', 'artyom'];
@@ -72,7 +72,7 @@ do {
 
 let password = 'pass';
 
-if (password.length > 3 ) {
+if (password.length > 3) {
     console.log('your password length is correct');
 }
 
@@ -83,9 +83,9 @@ if (password.length > 3 ) {
 let username = "mydeepsix";
 
 if (username.length > 6) {
-    console.log ('you have a good username');
+    console.log('you have a good username');
 } else {
-    console.log ('you have a bad username');
+    console.log('you have a bad username');
 }
 
 // теперь условие больше с else if
@@ -94,7 +94,7 @@ let email = 'mydeepsix@ya.ru';
 
 if (email.includes('@')) { //метод include проверяет есть ли такой символ
     console.log('you have a correct email');
-} else if (email.includes ('#')) {
+} else if (email.includes('#')) {
     console.log('you cannot use #');
 } else {
     console.log('your email is strange');
@@ -123,4 +123,37 @@ if (surname = 'nesterov' && surname.includes('v')) {
     console.log('you have not typed nesterov');
 }
 
-// logical not
+// logical not - позволяет сделать opposite
+
+let familyname = true;
+console.log(!familyname); // по идее должно быть true, но будет false тк мы используем logical not
+
+// break используется чтобы выйти из loop
+// набираем сто баллов и выходим, и дальше не выводим в консоль
+// break вставляется с if в тело for
+
+let points = [50, 25, 70, 100, 50, 10];
+
+for (i = 0; i < points.length; i++) {
+    console.log(points[i]);
+    if (points[i] === 100) {
+        console.log('you win! you get 100');
+        break;
+    }
+}
+
+
+// continue в свою очередь дает возможность перепрыгивать через итерацию 
+// например, нам не охота выводить 0 в консоль, то сделаем следующее
+
+let marks = [1, 4, 0, 5, 100, 6];
+
+for (i = 0; i < marks.length; i++) {
+
+
+    if (marks[i] === 0) {
+        continue; // важно ставить continue в начало, иначе не сработает если console.log ниже сделать выше
+    }
+
+    console.log('all of your marks:' + marks[i]);
+}

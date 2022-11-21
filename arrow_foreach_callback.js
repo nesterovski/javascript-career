@@ -66,7 +66,7 @@ const bill = (products, tax) => {
 
 
 // for each method & callbacks lesson 35 git
-
-
-
 // callback functions in action
+// тему callback нормальнь не понял, дошло только то, что это функция в функции
+// но зачем это и как грамотно с ней работать не понял
+

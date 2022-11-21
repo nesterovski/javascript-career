@@ -1,1 +1,0 @@
-// objects in array вроде lesson 41 git

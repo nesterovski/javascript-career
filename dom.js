@@ -28,3 +28,12 @@ console.log(allPara[0]); // позволяет из всех вытащить о
 
 
 // other ways to query the DOM
+
+// можно так же доставать теги с помощью .getElementById,
+// .getElementByClassName, .getElementByTagName (TagName выбирает сразу все теги, например, p)
+// на моем этапе разницы нет, но Шон говорит, что querySelector привычнее для него
+
+
+// adding and changing page content 
+
+

@@ -30,7 +30,7 @@ form.addEventListener('submit', e => {
 // нужно в слэшах
 // 6,10 сколько символов можно
 
-// text метод нужен чисто для RegEx
+// test метод нужен чисто для RegEx
 // возращает true или false в зависимости от того как прошла проверка
 
 let name = 'shadsdfdf';

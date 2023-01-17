@@ -28,10 +28,18 @@ addForm.addEventListener('submit', e => {
     e.preventDefault();
 
     const todo = addForm.add.value.trim();
+    
+    if (todo.length) { 
     generateTemplate(todo);
-    console.log(todo);
+    addForm.reset(); // если не добавить этот метод то после добавление todo в форме останется прошлое имя, а так форма очищается
+    };
 
 });
 
 // остановился на 6,35, все работает, но пока можно вставить в Todo пустой запрос
+// чтобы пустой запрос не отправлялся добавлю условие с методом length
+
+
+
+// теперь работаем над удалением todos
 

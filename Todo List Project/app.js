@@ -1,4 +1,4 @@
-// part 10 To do list projec
+// part 10 To do list project
 
 // шаги как выполнить проект:
 // сначала делаем ссылку на форму (дом) и затем вешаем event listener
@@ -10,37 +10,62 @@
 // затем сдадия фильтрации, но пока не дошел
 
 
-let addForm = document.querySelector('.add');
-let list = document.querySelector('.todos');
+const addForm = document.querySelector('.add');
+const search = document.querySelector('.search input');
+const list = document.querySelector('.todos');
 
-let generateTemplate = todo => {
+const generateTemplate = todo => {
+  const html = `
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <span>${todo}</span>
+      <i class="far fa-trash-alt delete"></i>
+    </li>
+  `;
+  list.innerHTML += html;
+};
 
-    const html = `<li class="list-group-item d-flex justify-content-between align-items-center">
-    <span>${todo}</span>
-    <i class="far fa-trash-alt delete"></i>
-    </li>`;
+const filterTodos = term => {
 
-    list.innerHTML += html;
+  // add filtered class
+  Array.from(list.children)
+    .filter(todo => !todo.textContent.toLowerCase().includes(term))
+    .forEach(todo => todo.classList.add('filtered'));
+
+  // remove filtered class
+  Array.from(list.children)
+    .filter(todo => todo.textContent.toLowerCase().includes(term))
+    .forEach(todo => todo.classList.remove('filtered'));
 
 };
 
+// add todos event
 addForm.addEventListener('submit', e => {
-    e.preventDefault();
+  
+  e.preventDefault();
+  const todo = addForm.add.value.trim();
 
-    const todo = addForm.add.value.trim();
-    
-    if (todo.length) { 
+  if(todo.length){
     generateTemplate(todo);
     addForm.reset(); // если не добавить этот метод то после добавление todo в форме останется прошлое имя, а так форма очищается
-    };
+  }
 
 });
 
-// остановился на 6,35, все работает, но пока можно вставить в Todo пустой запрос
-// чтобы пустой запрос не отправлялся добавлю условие с методом length
+// delete todos event
+list.addEventListener('click', e => {
+
+  if(e.target.classList.contains('delete')){
+    e.target.parentElement.remove();
+  }
+
+});
+
+// filter todos event
+search.addEventListener('keyup', () => {
+
+  const term = search.value.trim().toLowerCase();
+  filterTodos(term);
+
+});
 
 
-
-// теперь работаем над удалением todos
-
-// пробую синхронизацию после обновления на мак

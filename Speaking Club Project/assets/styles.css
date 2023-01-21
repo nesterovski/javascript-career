@@ -1,3 +1,59 @@
 body {
-  background: #352f5b;
+  font-family: 'Jost', sans-serif;
+}
+
+.header {
+  display: flex;
+
+  flex-wrap: wrap;
+  /* делает возможным перенос блоков если не умещаются на экране*/
+
+}
+
+.header-top-content {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+
+
+}
+
+.header-logo {
+  flex: 1;
+  border: 2px solid;
+}
+
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  background-color: salmon;
+  border: 2px solid;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header-social {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  border: 2px solid;
+  background-color: rgb(118, 106, 105);
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.header-headline {
+
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.header-middle-content {
+  display: flex;
+
 }

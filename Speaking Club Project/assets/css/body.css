@@ -1,11 +1,12 @@
 .section2 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
     background-color: #F5F5F5;
-    width: 1500px;
-    height: 1446px;
+    width: 100%;
     margin-top: 130px;
-    border: 1px solid;
+    
 }
 
 
@@ -13,8 +14,7 @@
     display: flex;
     flex-direction: column;
     
-    margin-left: 30%; /* не знаю как еще с помощью флексов выравнить блок по середине*/
-    /* из за отступа маржин выше смещаются блоки погружение и тд */
+   
 }
 
 .section2-headline {
@@ -48,7 +48,7 @@ color: #000000;
     justify-content: center;
     align-items: center;
     
-    border: 1px solid;
+    
 }
 
 .block-headline {
@@ -73,3 +73,12 @@ text-align: center;
 letter-spacing: 0.05em;
 color: #000000;
 }
+
+
+/* вместо margin делать padding, не задавать width у главных контейнеров 
+по фигме не нужно все величины соблюдать
+когда я делаю блок флексом то почти никогда не нужны марджины тк флекс делаем правильное выравнивание
+margin 0 auto ------ нужен чтобы выравнить по середине что угодно
+
+
+*/

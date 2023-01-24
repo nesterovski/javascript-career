@@ -10,13 +10,13 @@ body {
   width: 100%;
   /* делает возможным перенос блоков если не умещаются на экране*/
   margin-top: 20.57px;
-  margin-left: 20.98px;
 }
 
 .header-top-content {
   display: flex;
   justify-content: center;
-  
+  padding-left: 30px;
+
   height: 90px;
 
 
@@ -92,6 +92,8 @@ body {
   display: flex;
   flex-flow: column; /* это свойство позволяет сделать блоки внутри этого контейнера друг под другом */
   margin-right: 93.40px;
+  /* padding-left: 30px; */
+
 }
 
 .header-headline {

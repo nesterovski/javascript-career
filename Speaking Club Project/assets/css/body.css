@@ -1,9 +1,8 @@
 .section2 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
     background-color: #F5F5F5;
-    width: 100%;
+    width: 1500px;
     height: 1446px;
     margin-top: 130px;
     border: 1px solid;
@@ -13,9 +12,9 @@
 .section2-headline-content {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    margin-left: 35%; /* не знаю как еще с помощью флексов выравнить блок по середине*/
     
+    margin-left: 30%; /* не знаю как еще с помощью флексов выравнить блок по середине*/
+    /* из за отступа маржин выше смещаются блоки погружение и тд */
 }
 
 .section2-headline {
@@ -30,24 +29,31 @@ color: #000000;
 
 }
 
-.section2-headline-underline {
+/* .section2-headline-underline {
 
-}
+} */
 
 .section2-block {
     display: flex;
-    
-    
     flex-direction: column;
-    align-items: center;
     margin-top: 20%;
     
     
 }
 
+
+.block-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid;
+}
+
 .block-headline {
 
-margin-left: 20%; /* не знаю как по другому по центру сделать заголовок*/
+
 font-family: 'Jost';
 font-style: normal;
 font-weight: 700;

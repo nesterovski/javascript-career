@@ -30,11 +30,9 @@ color: #000000;
     flex-wrap: wrap;
     background-color: #F5F5F5;
     width: 100%;
+    padding-bottom: 5%;
     
 }
-
-
-
 
 
 
@@ -44,7 +42,7 @@ color: #000000;
     align-items: center;
     width: 50%;
     flex-direction: column;
-    margin-top: 20%;
+    margin-top: 6%;
 }
 
 
@@ -81,6 +79,42 @@ letter-spacing: 0.05em;
 color: #000000;
 }
 
+.section3-headline-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    
+}
+
+.section3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom: 5%;
+    
+}
+
+.section3-block {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.section3-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.section3-block-info {
+position: absolute; /* помогает двигать элемент внутри флекс блока или другого */
+}
 
 /* вместо margin делать padding, не задавать width у главных контейнеров 
 по фигме не нужно все величины соблюдать

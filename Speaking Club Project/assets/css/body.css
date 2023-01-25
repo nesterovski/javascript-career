@@ -1,17 +1,20 @@
+body {
+    width: 100%;
+    font-family: 'Jost', sans-serif;
+  }
 
-.section2-headline-block {
+  /* тут начинается вторая секция (что я получу) */
+
+  .section2-headline-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    background-color: #F5F5F5;
-    
-    
+    background-color: #F5F5F5;   
 }
 
 .section2-headline {
-
 font-family: 'Jost';
 font-style: normal;
 font-weight: 700;
@@ -19,7 +22,6 @@ font-size: 60px;
 line-height: 116.9%;
 letter-spacing: 0.03em;
 color: #000000;
-
 }
 
 
@@ -31,7 +33,6 @@ color: #000000;
     background-color: #F5F5F5;
     width: 100%;
     padding-bottom: 5%;
-    
 }
 
 
@@ -79,6 +80,10 @@ letter-spacing: 0.05em;
 color: #000000;
 }
 
+
+
+
+/* заголовок третьей секции (как работает клуб) */
 .section3-headline-block {
     display: flex;
     flex-direction: column;
@@ -89,6 +94,7 @@ color: #000000;
     
 }
 
+/* тут начинается третья секция (как работает клуб) */
 .section3 {
     display: flex;
     flex-wrap: wrap;
@@ -97,6 +103,7 @@ color: #000000;
     
 }
 
+/* блок с преимуществом */
 .section3-block {
     display: flex;
     flex-direction: column;
@@ -114,9 +121,52 @@ color: #000000;
 
 .section3-block-info {
 position: absolute; /* помогает двигать элемент внутри флекс блока или другого */
+font-size: 24px;
 }
 
-/* вместо margin делать padding, не задавать width у главных контейнеров 
+
+/* тут третья секция заканчивается заголовком итог */
+
+.section3-itog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.section3-itog-headline {
+    font-size: 60px;
+    font-weight: bold;
+}
+.section3-itog-info {
+    display: flex;
+}
+.section3-itog-arrows-left {
+    padding-right: 25px;
+}
+.section3-itog-description {
+     padding-top: 42px; /*правильно ли я так выравнил текст */
+    font-size: 24px;
+}
+.section3-itog-arrows-right {
+    padding-left: 25px;
+}
+
+/* тут третья секция закончилась полностью */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* вместо margin делать padding, не задавать width у главных контейнеров 
 по фигме не нужно все величины соблюдать
 когда я делаю блок флексом то почти никогда не нужны марджины тк флекс делаем правильное выравнивание
 margin 0 auto ------ нужен чтобы выравнить по середине что угодно

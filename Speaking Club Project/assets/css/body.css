@@ -157,9 +157,72 @@ font-size: 24px;
 
 
 
+/* блок 4 где цена с чашкой кофе */
 
+.section4 {
+    display: flex;
+    width: 100%;
+    background-color: #F5F5F5;
 
+}
 
+.section4-left {
+    display: flex;
+    width: 50%;
+    
+}
+
+.section4-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 50%;
+    
+}
+
+.section4-right-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section4-right-info-text {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 124.9%;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.section4-right-info-rub {
+    
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 112.4%;
+    letter-spacing: 0.05em;
+    color: #FE7170;
+}
+
+/* .section4-right-info-enroll {
+    
+   
+} */
+
+.section4-right-info-enroll img {
+   
+    width: 167.5px;
+    height: 63.85px;
+}
+
+/* тут четвертая секция закончилась */
 
 
 

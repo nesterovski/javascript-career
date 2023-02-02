@@ -234,6 +234,7 @@ font-size: 24px;
 .section5 {
     display: flex;
     width: 100%;
+    
 }
 
 .section5-left {
@@ -242,9 +243,11 @@ font-size: 24px;
     justify-content: center;
     align-items: center;
     width: 50%;
+    
 }
 
 .section5-block-title {
+    
     font-family: 'Jost';
     font-style: normal;
     font-weight: 700;
@@ -264,12 +267,14 @@ font-size: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 10px;
+    
 }
 
 
 .section5-eugene-name {
+padding-top: 50px;
 font-family: 'Jost';
 font-style: normal;
 font-weight: 700;
@@ -296,23 +301,29 @@ opacity: 0.67;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 15px;
+    padding-top: 36px;
     
 }
 
 .section5-pluses-block {
     display: flex;
+    justify-content: space-between;
+    
     
 }
-.section5-pluses-point {}
+.section5-pluses-point {
+    display: flex;
+    padding-right: 10px;
+}
 
 .section5-pluses-text {
 font-family: 'Jost';
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
-line-height: 124.9%;
+line-height: 120%;
 letter-spacing: 0.05em;
 color: #000000;
 }
@@ -320,11 +331,57 @@ color: #000000;
 .section5-right {
     display: flex;
     width: 50%;
+    
 }
 
 
 
 /* тут заканчивается пятая секция (об авторе) */
+
+
+
+
+
+
+
+
+/* тут начинается шестая секция (контактная форма) */
+
+
+
+
+.section6 {
+    display: flex;
+    width: 100%;
+    background-color: #F5F5F5;
+
+}
+
+.section6-left {
+    display: flex;
+    width: 50%;
+    border: 1px solid;
+}
+
+.section6-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 50%;
+    border: 1px solid;
+}
+
+
+
+/* тут начинается шестая секция (контактная форма) */
+
+
+
+
+
+
 
 
 

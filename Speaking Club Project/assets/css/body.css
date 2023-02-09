@@ -352,6 +352,7 @@ color: #000000;
 
 .section6 {
     display: flex;
+    gap: 15px;
     width: 100%;
     background-color: #F5F5F5;
 
@@ -359,8 +360,10 @@ color: #000000;
 
 .section6-left {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    border: 1px solid;
+    
 }
 
 .section6-right {
@@ -370,14 +373,172 @@ color: #000000;
     align-items: center;
     gap: 5%;
     width: 50%;
-    border: 1px solid;
+    
+}
+
+.section6-application {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section6-headline {}
+
+.section6-title { 
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 116.9%;
+letter-spacing: 0.03em;
+color: #000000;
+}
+
+.section6-line {
+    padding-top: 5px;
+}
+
+.section6-userdata-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.section6-userdata-options-where {
+width: 100%;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 124.9%;
+letter-spacing: 0.05em;
+color: #888888;
+}
+
+.section6-userdata-options-social {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
+.section6-userdata-options-media {
+display: flex;
+gap: 5px;
+justify-content: center;
+align-items: center;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 124.9%;
+letter-spacing: 0.05em;
+color: #232323;
 }
 
 
 
-/* тут начинается шестая секция (контактная форма) */
+.section6-userdata-submit {
+    padding-top: 15px;
+    cursor: pointer;
+}
 
 
+/* тут заканчивается шестая секция (контактная форма) */
+
+
+
+
+
+
+
+
+
+
+
+/* тут начинается седьмая секция (реклама курсов) */
+
+
+
+
+.section7 {
+display: flex;
+}
+
+.section7-left {
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 50%;
+    
+}
+
+.section7-title {
+font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 57px; /* надо 60, но не умещается на одной строке */
+line-height: 116.9%;
+letter-spacing: 0.03em;
+color: #000000;
+}
+
+.section7-info {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+
+.section7-points {}
+
+
+.section7-point-block {
+display: flex;
+align-items: center;
+gap: 10px;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 124.9%;
+letter-spacing: 0.05em;
+color: #000000;
+}
+
+
+
+.section7-headline span {
+color: #FE7170
+}
+
+.section7-right {
+width: 50%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* тут заканчивается седьмая секция (реклама курсов) */
 
 
 

@@ -528,17 +528,182 @@ width: 50%;
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* тут заканчивается седьмая секция (реклама курсов) */
+
+
+
+
+/* тут начинается восьмая секция (вопросы) */
+
+
+
+
+.section8 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    
+}
+
+.section8-headline {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section8-title {
+font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 112.4%;
+letter-spacing: 0.05em;
+color: #000000;
+}
+
+
+.section8-block-faq {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+.section8-question-active {
+font-family: 'Jost';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 112.4%;
+letter-spacing: 0.05em;
+color: #0075FF;
+}
+
+.section8-question-passive {
+padding-top: 2%;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 112.4%;
+letter-spacing: 0.05em;
+color: #000000;
+}
+
+.section8-question-info {
+padding-top: 2%;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 124.9%;
+letter-spacing: 0.05em;
+color: #000000;
+}
+
+.section8-have-question {
+
+    padding-top: 5%;
+    padding-bottom: 4%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 112.4%;
+    letter-spacing: 0.05em;
+    color: #0075FF;
+    }
+
+/* тут заканчивается восьмая секция (вопросы) */
+
+
+
+
+/* тут начинается футер */
+
+
+.footer {
+padding-top: 2%;
+width: 100%;
+display: flex;
+}
+
+.footer-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-info, .footer-social-name {
+padding-top: 3%;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 122.4%;
+letter-spacing: 0.05em;
+color: #888888;
+}
+
+
+
+
+.footer-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.footer-social-title {
+    width: 100%;
+    font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 122.4%;
+
+
+letter-spacing: 0.05em;
+
+color: #000000;
+
+    
+
+}
+
+.footer-social-block-item {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+
+
+
+
+
+
+/* тут заканчивается футер */
+
+
+
+
 
 
 

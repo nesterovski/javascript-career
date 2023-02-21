@@ -8,6 +8,10 @@ body {
     color: #000000;
   }
 
+  #link_question {
+    color: #0075FF;
+  }
+
   /* тут начинается вторая секция (что я получу) */
 
   .section2-headline-block {
@@ -205,6 +209,10 @@ top: 130px;
     gap: 20px;
 }
 
+.section4-right-info-enroll img {
+
+}
+
 .section4-right-info-text {
     padding-top: 25px;
     font-family: 'Jost';
@@ -397,13 +405,22 @@ color: #000000;
 }
 
 .section6-application {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50%;
+    
+    
+}
+
+.section6-headline {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.section6-headline {}
 
 .section6-title { 
 
@@ -423,11 +440,20 @@ color: #000000;
 .section6-userdata-options {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 20px;
+}
+
+.section6-userdata {
+    
+}
+
+.section6-userdata-line img {
+    
 }
 
 .section6-userdata-options-where {
 width: 100%;
+padding-top: 20px;
 font-family: 'Jost';
 font-style: normal;
 font-weight: 400;
@@ -439,7 +465,7 @@ color: #888888;
 
 .section6-userdata-options-social {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     width: 100%;
 }
 
@@ -457,10 +483,22 @@ letter-spacing: 0.05em;
 color: #232323;
 }
 
-
+.section6-userdata input {
+width: 357px;
+border: none;
+background-color: inherit;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 124.9%;
+letter-spacing: 0.05em;
+color: #888888;
+}
 
 .section6-userdata-submit {
-    padding-top: 15px;
+    padding-left: 10%;
+    padding-top: 30px;
     cursor: pointer;
 }
 
@@ -488,9 +526,10 @@ display: flex;
 
 .section7-left {
 
-padding-top: 4%;
+padding-left: 60px;
 display: flex;
 flex-direction: column;
+justify-content: center;
 gap: 20px;
 width: 50%;
     
@@ -571,6 +610,7 @@ width: 50%;
 
 
 .section8 {
+    padding-left: 60px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -666,7 +706,7 @@ color: #000000;
 .footer {
 padding-top: 1%;
 width: 100%;
-height: 400px;
+height: 320px;
 display: flex;
 }
 
@@ -708,16 +748,14 @@ color: #888888;
 }
 
 .footer-social-title {
-    width: 100%;
-    font-family: 'Jost';
+padding-left: 34px;
+width: 100%;
+font-family: 'Jost';
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
 line-height: 122.4%;
-
-
 letter-spacing: 0.05em;
-
 color: #000000;
 
     

@@ -1,9 +1,9 @@
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 :root {
   --bg: #fff;
@@ -27,8 +27,11 @@
 }
 
 .accordion {
-  margin-top: 20px;
-  width: 80%;
+margin-top: 20px;
+width: 90%;
+display: flex;
+flex-direction: column;
+gap: 10px;
 }
 
 
@@ -68,10 +71,10 @@
 font-family: 'Jost';
 font-style: normal;
 font-weight: 500;
-font-size: 40px;
+font-size: 30px;
 line-height: 112.4%;
 letter-spacing: 0.05em;
-color: #0075FF;
+color: #000000;
 }
 
 .accordion button .icon {

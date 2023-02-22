@@ -254,33 +254,32 @@
     </div>
 
     <div class="section6-application">
-
-        <div class="section6-userdata"><input type="text" placeholder="телефон или логин"></div>
+      
+      <form action="https://formspree.io/f/xlekbajk"  method="POST">
+        <div class="section6-userdata"><input type="text" placeholder="телефон или логин" name="contacts"></div>
         <div class="section6-userdata-line"><img src="assets/images/section6/field_line.svg"></div>
         
         <div class="section6-userdata-options">
           <div class="section6-userdata-options-where">куда вам написать?</div>
-
-          
           
           <div class="section6-userdata-options-social">
               <div class="section6-userdata-options-media">
-                <div class="checkbox"><input type="checkbox"></div>
+                <div class="checkbox"><input type="checkbox" name="telegram-choice"></div>
                 <div class="checkbox-tg">Telegram</div>
               </div>
               <div class="section6-userdata-options-media">
-                <div class="checkbox"><input type="checkbox"></div>
+                <div class="checkbox"><input type="checkbox" name="vk-choice"></div>
                 <div class="checkbox-vk">VK</div>
               </div>
               <div class="section6-userdata-options-media">
-                <div class="checkbox"><input type="checkbox"></div>
+                <div class="checkbox"><input type="checkbox" name="whatsapp-choice"></div>
                 <div class="checkbox-whats">WhatsApp</div>
               </div>
         </div>
         </div>
 
-        <div class="section6-userdata-submit"><img src="assets/images/section6/application-button.svg"></div>
-
+        <div class="section6-userdata-submit"><button type="submit"><img src="assets/images/section6/application-button.svg" id="submitt"></button></div>
+      </form>
     </div>
 
 

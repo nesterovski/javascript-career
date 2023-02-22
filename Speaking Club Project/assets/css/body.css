@@ -1,12 +1,21 @@
+
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     font-family: 'Jost', sans-serif;
+    
   }
 
   a {
     text-decoration:none;
     color: #000000;
   }
+
+  
+
 
   #link_question {
     color: #0075FF;
@@ -497,19 +506,29 @@ color: #888888;
 }
 
 .section6-userdata-submit {
+    
+   
     padding-left: 10%;
     padding-top: 30px;
-    cursor: pointer;
+    cursor: pointer; 
+    
+
+}
+
+/* .section6-userdata-submit {
+    
+    
+    
+
+} */
+
+.section6-userdata-submit button:hover {
+    
+    background: url(image-css/application-button-active.svg);
 }
 
 
 /* тут заканчивается шестая секция (контактная форма) */
-
-
-
-
-
-
 
 
 
@@ -554,14 +573,14 @@ gap: 10px;
 
 
 .section7-points {
-    padding-top: 4%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+padding-top: 4%;
+display: flex;
+flex-direction: column;
+gap: 30px;
 }
 
 .section7-button {
-    padding-top: 3%;
+padding-top: 3%;
 }
 
 
@@ -610,19 +629,19 @@ width: 50%;
 
 
 .section8 {
-    padding-left: 60px;
-    padding-bottom: 5%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #F5F5F5;
+padding-left: 60px;
+padding-bottom: 5%;
+width: 100%;
+display: flex;
+flex-direction: column;
+background-color: #F5F5F5;
     
 }
 
 .section8-headline {
-    padding-top: 5%;
-    display: flex;
-    flex-direction: column;
+padding-top: 5%;
+display: flex;
+flex-direction: column;
     
 }
 

@@ -1,4 +1,3 @@
-
 .header {
   display: flex;
   justify-content: space-evenly;
@@ -27,8 +26,8 @@
   justify-content: space-between;
   gap: 70px;
   align-items: center;
-  
-  
+
+
   font-family: 'Jost';
   font-style: normal;
   font-weight: 400;
@@ -41,18 +40,19 @@
 
 .header-social {
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
-  
-  
-  
+
+
+
 }
 
 .social-icon {
   width: 25px;
   height: 25px;
-  margin-left: 26px; /* таким образом сделал отступ между иконками, но думаю есть лучше способ*/
-  
+  margin-left: 26px;
+  /* таким образом сделал отступ между иконками, но думаю есть лучше способ*/
+
 }
 
 .header-headline {
@@ -69,17 +69,18 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  padding-top: 70px; 
-  
+  padding-top: 70px;
+
 
 }
 
 .header-left-content {
 
   display: flex;
-  flex-flow: column; /* это свойство позволяет сделать блоки внутри этого контейнера друг под другом */
-  
-  
+  flex-flow: column;
+  /* это свойство позволяет сделать блоки внутри этого контейнера друг под другом */
+
+
 
 }
 
@@ -90,26 +91,26 @@
   line-height: 70px;
   letter-spacing: 0.03em;
   text-align: left;
-  
-  
+
+
   font-family: Jost;
   font-size: 60px;
   font-weight: 700;
   line-height: 70px;
   letter-spacing: 0.03em;
   text-align: left;
-  
+
 }
 
 .header-info {
-margin-top: 38.60px;
-margin-bottom: 41.28px;
-font-family: Jost;
-font-size: 24px;
-font-weight: 400;
-line-height: 32px;
-letter-spacing: 0.05em;
-text-align: left;
+  margin-top: 38.60px;
+  margin-bottom: 41.28px;
+  font-family: Jost;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-align: left;
 
 }
 
@@ -117,9 +118,6 @@ text-align: left;
   display: flex;
 }
 
-.header-button-section {
-
-}
 
 .button-start {
   width: 167.5px;
@@ -135,7 +133,7 @@ text-align: left;
 .header-right-content {
 
   display: flex;
-  
+
 
 }
 
@@ -143,10 +141,3 @@ text-align: left;
   width: 652.71px;
   height: 494.19px;
 }
-
-/* стили по мелочам */ 
-
-a {
-  text-decoration: none;
-}
-

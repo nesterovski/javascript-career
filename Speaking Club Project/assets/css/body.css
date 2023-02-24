@@ -1,4 +1,3 @@
-
 * {
     scroll-behavior: smooth;
 }
@@ -6,41 +5,36 @@
 body {
     width: 100%;
     font-family: 'Jost', sans-serif;
-    
-  }
 
-  a {
-    text-decoration:none;
+}
+
+a {
+    text-decoration: none;
     color: #000000;
-  }
-
-  
+}
 
 
-  #link_question {
-    color: #0075FF;
-  }
 
-  /* тут начинается вторая секция (что я получу) */
+/* тут начинается вторая секция (что я получу) */
 
-  .section2-headline-block {
+.section2-headline-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    background-color: #F5F5F5;   
+    background-color: #F5F5F5;
 }
 
 .section2-headline {
-padding-top: 70px;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 60px;
-line-height: 116.9%;
-letter-spacing: 0.03em;
-color: #000000;
+    padding-top: 70px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 116.9%;
+    letter-spacing: 0.03em;
+    color: #000000;
 }
 
 
@@ -57,7 +51,7 @@ color: #000000;
 
 
 .section2-block {
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
@@ -79,25 +73,25 @@ color: #000000;
 }
 
 .section2-block-headline {
-padding-bottom: 15px;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 112.4%;
-letter-spacing: 0.05em;
-color: #000000;
+    padding-bottom: 15px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 112.4%;
+    letter-spacing: 0.05em;
+    color: #000000;
 }
 
 .section2-block-description {
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 124.9%;
-text-align: center;
-letter-spacing: 0.05em;
-color: #000000;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 124.9%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
 }
 
 
@@ -111,7 +105,7 @@ color: #000000;
     align-items: center;
     margin-top: 6%;
     margin-bottom: 6%;
-    
+
 }
 
 /* тут начинается третья секция (как работает клуб) */
@@ -120,7 +114,7 @@ color: #000000;
     flex-wrap: wrap;
     gap: 50px;
     padding-bottom: 5%;
-    
+
 }
 
 /* блок с преимуществом */
@@ -135,14 +129,14 @@ color: #000000;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   position: relative;
+    position: relative;
 
 }
 
 .section3-block-info {
-position: absolute;
-font-size: 24px;
-top: 130px;
+    position: absolute;
+    font-size: 24px;
+    top: 130px;
 
 }
 
@@ -156,21 +150,26 @@ top: 130px;
     align-items: center;
     width: 100%;
 }
+
 .section3-itog-headline {
     font-size: 60px;
     font-weight: bold;
 }
+
 .section3-itog-info {
     display: flex;
     padding-bottom: 40px;
 }
+
 .section3-itog-arrows-left {
     padding-right: 25px;
 }
+
 .section3-itog-description {
-     padding-top: 50px;
+    padding-top: 50px;
     font-size: 24px;
 }
+
 .section3-itog-arrows-right {
     padding-left: 25px;
 }
@@ -195,8 +194,8 @@ top: 130px;
     width: 40%;
     display: flex;
     padding-left: 20px;
-    
-    
+
+
 }
 
 .section4-right {
@@ -205,9 +204,9 @@ top: 130px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
-    
+
+
+
 }
 
 .section4-right-info {
@@ -218,9 +217,7 @@ top: 130px;
     gap: 20px;
 }
 
-.section4-right-info-enroll img {
-
-}
+.section4-right-info-enroll img {}
 
 .section4-right-info-text {
     padding-top: 25px;
@@ -234,7 +231,7 @@ top: 130px;
 }
 
 .section4-right-info-rub {
-    
+
     font-family: 'Jost';
     font-style: normal;
     font-weight: 700;
@@ -250,7 +247,7 @@ top: 130px;
 } */
 
 .section4-right-info-enroll img {
-   
+
     width: 167.5px;
     height: 63.85px;
 }
@@ -267,7 +264,7 @@ top: 130px;
 .section5 {
     display: flex;
     width: 100%;
-    
+
 }
 
 .section5-left {
@@ -276,12 +273,12 @@ top: 130px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
+
+
 }
 
 .section5-block-title {
-    
+
     font-family: 'Jost';
     font-style: normal;
     font-weight: 700;
@@ -304,34 +301,32 @@ top: 130px;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    
-    
+
+
 }
 
 
 .section5-eugene-name {
-padding-top: 50px;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 112.4%;
-letter-spacing: 0.05em;
-color: #000000;
+    padding-top: 50px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 112.4%;
+    letter-spacing: 0.05em;
+    color: #000000;
 }
 
-.section5-eugene-line {}
-
 .section5-eugene-info {
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 124.9%;
-letter-spacing: 0.05em;
-color: #000000;
-opacity: 0.67;
-}  
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 124.9%;
+    letter-spacing: 0.05em;
+    color: #000000;
+    opacity: 0.67;
+}
 
 .section5-pluses {
     width: 100%;
@@ -341,34 +336,33 @@ opacity: 0.67;
     align-items: start;
     gap: 30px;
     padding-top: 36px;
-    
+
 }
 
 .section5-pluses-block {
     display: flex;
     justify-content: space-between;
-    
-    
 }
+
 .section5-pluses-point {
     display: flex;
     padding-right: 10px;
 }
 
 .section5-pluses-text {
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 120%;
-letter-spacing: 0.05em;
-color: #000000;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    color: #000000;
 }
 
 .section5-right {
     display: flex;
     width: 40%;
-    
+
 }
 
 
@@ -400,7 +394,7 @@ color: #000000;
     justify-content: center;
     align-items: center;
     width: 50%;
-    
+
 }
 
 .section6-right {
@@ -410,7 +404,7 @@ color: #000000;
     align-items: center;
     gap: 5%;
     width: 50%;
-    
+
 }
 
 .section6-application {
@@ -418,8 +412,7 @@ color: #000000;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50%; /* Удалить и заменить на то, что ниже */
-    /*align-items: center;*/
+    align-items: center;
 }
 
 .section6-headline {
@@ -430,15 +423,15 @@ color: #000000;
     align-items: center;
 }
 
-.section6-title { 
+.section6-title {
 
-font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 60px;
-line-height: 116.9%;
-letter-spacing: 0.03em;
-color: #000000;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 116.9%;
+    letter-spacing: 0.03em;
+    color: #000000;
 }
 
 .section6-line {
@@ -447,29 +440,22 @@ color: #000000;
 
 .section6-userdata-options {
     display: flex;
-    flex-wrap: wrap; /* Удалить и заменить на то, что ниже */
-    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
 }
 
-.section6-userdata {
-    
-}
-
-.section6-userdata-line img {
-    
-}
 
 .section6-userdata-options-where {
-width: 100%;
-padding-top: 20px;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 124.9%;
-letter-spacing: 0.05em;
-color: #888888;
+    width: 100%;
+    padding-top: 20px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 124.9%;
+    letter-spacing: 0.05em;
+    color: #888888;
 }
 
 .section6-userdata-options-social {
@@ -479,39 +465,39 @@ color: #888888;
 }
 
 .section6-userdata-options-media {
-display: flex;
-gap: 5px;
-justify-content: center;
-align-items: center;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 124.9%;
-letter-spacing: 0.05em;
-color: #232323;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 124.9%;
+    letter-spacing: 0.05em;
+    color: #232323;
 }
 
 .section6-userdata input {
-width: 357px;
-border: none;
-background-color: inherit;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 124.9%;
-letter-spacing: 0.05em;
-color: #888888;
+    width: 357px;
+    border: none;
+    background-color: inherit;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 124.9%;
+    letter-spacing: 0.05em;
+    color: #888888;
 }
 
 .section6-userdata-submit {
-    
-   
+
+
     padding-left: 10%;
     padding-top: 30px;
-    cursor: pointer; 
-    
+    cursor: pointer;
+
 
 }
 
@@ -523,7 +509,7 @@ color: #888888;
 } */
 
 .section6-userdata-submit button:hover {
-    
+
     background: url(image-css/application-button-active.svg);
 }
 
@@ -540,71 +526,72 @@ color: #888888;
 
 
 .section7 {
-display: flex;
+    display: flex;
 }
 
 .section7-left {
 
-padding-left: 60px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 20px;
-width: 50%;
-    
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+
 }
 
 .section7-title {
-font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 57px; /* надо 60, но не умещается на одной строке */
-line-height: 116.9%;
-letter-spacing: 0.03em;
-color: #000000;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 57px;
+    /* надо 60, но не умещается на одной строке */
+    line-height: 116.9%;
+    letter-spacing: 0.03em;
+    color: #000000;
 }
 
 .section7-info {
 
-display: flex;
-flex-direction: column;
-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 
 .section7-points {
-padding-top: 4%;
-display: flex;
-flex-direction: column;
-gap: 30px;
+    padding-top: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .section7-button {
-padding-top: 3%;
+    padding-top: 3%;
 }
 
 
 .section7-point-block {
-display: flex;
-align-items: center;
-gap: 10px;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 124.9%;
-letter-spacing: 0.05em;
-color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 124.9%;
+    letter-spacing: 0.05em;
+    color: #000000;
 }
 
 
 
 .section7-headline span {
-color: #FE7170
+    color: #FE7170
 }
 
 .section7-right {
-width: 50%;
+    width: 50%;
 
 }
 
@@ -629,30 +616,30 @@ width: 50%;
 
 
 .section8 {
-padding-left: 60px;
-padding-bottom: 5%;
-width: 100%;
-display: flex;
-flex-direction: column;
-background-color: #F5F5F5;
-    
+    padding-left: 60px;
+    padding-bottom: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+
 }
 
 .section8-headline {
-padding-top: 5%;
-display: flex;
-flex-direction: column;
-    
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .section8-title {
-font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 112.4%;
-letter-spacing: 0.05em;
-color: #000000;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 112.4%;
+    letter-spacing: 0.05em;
+    color: #000000;
 }
 
 
@@ -663,43 +650,43 @@ color: #000000;
 }
 
 .section8-question-active {
-font-family: 'Jost';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 112.4%;
-letter-spacing: 0.05em;
-color: #0075FF;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 112.4%;
+    letter-spacing: 0.05em;
+    color: #0075FF;
 }
 
 .section8-question-active img {
     padding-left: 25px;
-    }
+}
 
-    .section8-question-passive img {
-        padding-left: 25px;
-        }
+.section8-question-passive img {
+    padding-left: 25px;
+}
 
 .section8-question-passive {
-padding-top: 2%;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 112.4%;
-letter-spacing: 0.05em;
-color: #000000;
+    padding-top: 2%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 112.4%;
+    letter-spacing: 0.05em;
+    color: #000000;
 }
 
 .section8-question-info {
-padding-top: 2%;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 124.9%;
-letter-spacing: 0.05em;
-color: #000000;
+    padding-top: 2%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 124.9%;
+    letter-spacing: 0.05em;
+    color: #000000;
 }
 
 .section8-have-question {
@@ -713,7 +700,7 @@ color: #000000;
     line-height: 112.4%;
     letter-spacing: 0.05em;
     color: #0075FF;
-    }
+}
 
 /* тут заканчивается восьмая секция (вопросы) */
 
@@ -724,10 +711,10 @@ color: #000000;
 
 
 .footer {
-padding-top: 1%;
-width: 100%;
-height: 320px;
-display: flex;
+    padding-top: 1%;
+    width: 100%;
+    height: 320px;
+    display: flex;
 }
 
 .footer-left {
@@ -738,15 +725,16 @@ display: flex;
     align-items: center;
 }
 
-.footer-info, .footer-social-name {
-padding-top: 3%;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 122.4%;
-letter-spacing: 0.05em;
-color: #888888;
+.footer-info,
+.footer-social-name {
+    padding-top: 3%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 122.4%;
+    letter-spacing: 0.05em;
+    color: #888888;
 }
 
 
@@ -764,21 +752,21 @@ color: #888888;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
 
 .footer-social-title {
-padding-left: 34px;
-width: 100%;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 122.4%;
-letter-spacing: 0.05em;
-color: #000000;
+    padding-left: 34px;
+    width: 100%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 122.4%;
+    letter-spacing: 0.05em;
+    color: #000000;
 
-    
+
 
 }
 

@@ -137,6 +137,13 @@ a {
     position: absolute;
     font-size: 24px;
     top: 130px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 124.9%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
 
 }
 
@@ -209,11 +216,17 @@ a {
 
 }
 
+.section4-right-headline {
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+}
+
 .section4-right-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 20px;
 }
 
@@ -264,7 +277,8 @@ a {
 .section5 {
     display: flex;
     width: 100%;
-
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .section5-left {
@@ -397,7 +411,7 @@ a {
     gap: 15px;
     width: 100%;
     background-color: #F5F5F5;
-
+    
 }
 
 .section6-left {
@@ -407,6 +421,8 @@ a {
     width: 50%;
 
 }
+
+
 
 .section6-right {
     display: flex;
@@ -435,7 +451,7 @@ a {
 }
 
 .section6-title {
-
+    padding-right: 95px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 700;
@@ -447,7 +463,9 @@ a {
 
 .section6-line {
     padding-top: 5px;
+    padding-right: 135px;
 }
+
 
 .section6-userdata-options {
     display: flex;
@@ -502,10 +520,20 @@ a {
     color: #888888;
 }
 
+.form-line-active input:focus, .form-line-active textarea:focus {
+    border: 1px solid green !important;
+    box-shadow: 0 0 3px green !important;
+    -moz-box-shadow: 0 0 3px green !important;
+    -webkit-box-shadow: 0 0 3px green !important;
+    }
+    
+    input:focus, textarea:focus, select:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+    }
+
 .section6-userdata-submit {
 
-
-    padding-left: 10%;
     padding-top: 30px;
     cursor: pointer;
 
@@ -660,6 +688,10 @@ width: 700;
     color: #000000;
 }
 
+.section8-line {
+    width: 25%;
+    overflow: hidden;
+}
 
 .section8-block-faq {
     display: flex;
@@ -736,11 +768,12 @@ width: 700;
 }
 
 .footer-left {
+    padding-left: 100px;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .footer-info,
@@ -759,11 +792,12 @@ width: 700;
 
 
 .footer-right {
+    padding-right: 40px;
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
 }
 
 .footer-social-block {

@@ -347,6 +347,12 @@ a {
 .section5-pluses-point {
     display: flex;
     padding-right: 10px;
+    
+}
+
+.section5-pluses-point img {
+    width: 10px;
+    
 }
 
 .section5-pluses-text {
@@ -362,6 +368,11 @@ a {
 .section5-right {
     display: flex;
     width: 40%;
+
+}
+
+.section5-right img {
+    overflow: hidden;
 
 }
 
@@ -566,6 +577,10 @@ a {
     gap: 30px;
 }
 
+.section7-points img {
+    width: 10px;
+}
+
 .section7-button {
     padding-top: 3%;
 }
@@ -595,7 +610,10 @@ a {
 
 }
 
-
+.section7-right img {
+overflow: hidden;
+width: 700;
+}
 
 
 

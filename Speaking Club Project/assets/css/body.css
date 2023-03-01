@@ -491,6 +491,7 @@ a {
     display: flex;
     gap: 10px;
     width: 100%;
+    margin: 0 0 20px 0;
 }
 
 .section6-userdata-options-media {
@@ -505,6 +506,10 @@ a {
     line-height: 124.9%;
     letter-spacing: 0.05em;
     color: #232323;
+}
+
+.section6-userdata-options-media input {
+    cursor: pointer;
 }
 
 .section6-userdata input {
@@ -533,23 +538,21 @@ a {
     }
 
 .section6-userdata-submit {
-
-    padding-top: 30px;
-    cursor: pointer;
-
-
+    width: fit-content;
 }
 
-/* .section6-userdata-submit {
-    
-    
-    
-
-} */
+.section6-userdata-submit button {
+    width: 221px;
+    height: 65px;
+    border: none;
+    background: url(../images/section6/application-button.svg) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
 
 .section6-userdata-submit button:hover {
-
-    background: url(image-css/application-button-active.svg);
+    background: url(image-css/application-button-active.svg) no-repeat center center;
+    background-size: cover;
 }
 
 

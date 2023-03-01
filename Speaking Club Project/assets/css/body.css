@@ -635,13 +635,9 @@ a {
 }
 
 .section7-right {
-    
-
-}
-
-.section7-right img {
-overflow: hidden;
-width: 700;
+    width: 730px;
+    height: 985px;
+    background: url(../images/section7/woman.svg) no-repeat top center;
 }
 
 

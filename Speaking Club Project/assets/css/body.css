@@ -566,16 +566,17 @@ a {
 
 .section7 {
     display: flex;
+    justify-content: space-around;
 }
 
 .section7-left {
 
-    padding-left: 60px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    width: 50%;
+    
 
 }
 
@@ -634,7 +635,7 @@ a {
 }
 
 .section7-right {
-    width: 50%;
+    
 
 }
 

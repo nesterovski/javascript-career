@@ -118,10 +118,27 @@
   display: flex;
 }
 
+.header-button-section {
+  width: fit-content;
+}
 
 .button-start {
   width: 167.5px;
   height: 63.85px;
+  background: url(../images/header/start-button.svg) no-repeat center center;
+  background-size: auto;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.button-start:hover {
+  width: 167.5px;
+  height: 63.85px;
+  background: url(../images/header/start-button-active.svg) no-repeat center center;
+  background-size: auto;
+  background-size: cover;
+  cursor: pointer;
+
 }
 
 .header-arrow {

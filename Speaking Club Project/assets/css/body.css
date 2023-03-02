@@ -230,7 +230,9 @@ a {
     gap: 20px;
 }
 
-.section4-right-info-enroll img {}
+.section4-right-info-enroll {
+    width: fit-content;
+}
 
 .section4-right-info-text {
     padding-top: 25px;
@@ -259,10 +261,22 @@ a {
    
 } */
 
-.section4-right-info-enroll img {
+.section4-right-info-enroll .enroll-button {
+    width: 240px;
+    height: 60px;
+    border: none;
+    background: url(../images/section4/enroll.svg) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
 
-    width: 167.5px;
-    height: 63.85px;
+.section4-right-info-enroll .enroll-button:hover {
+    width: 240px;
+    height: 60px;
+    border: none;
+    background: url(../images/section4/enroll-active.svg) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
 }
 
 /* тут четвертая секция закончилась */
@@ -276,13 +290,14 @@ a {
 
 .section5 {
     display: flex;
-    width: 100%;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    justify-content: space-around;
+    
+
 }
 
 .section5-left {
     padding-left: 60px;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -381,13 +396,11 @@ a {
 
 .section5-right {
     display: flex;
-    width: 40%;
-
-}
-
-.section5-right img {
-    overflow: hidden;
-
+    width: 930px;
+    height: 960px;
+    background: url(../images/section5/eugene.svg) no-repeat top center;
+    background-position-y: 100px;
+    background-position-x: -33px;
 }
 
 
@@ -465,6 +478,7 @@ a {
     padding-top: 5px;
     padding-right: 135px;
 }
+
 
 
 .section6-userdata-options {
@@ -551,8 +565,9 @@ a {
 }
 
 .section6-userdata-submit button:hover {
-    background: url(image-css/application-button-active.svg) no-repeat center center;
+    background: url(../images/section6/application-button-active.svg) no-repeat center center;
     background-size: cover;
+    
 }
 
 
@@ -573,8 +588,8 @@ a {
 }
 
 .section7-left {
-
-    
+    width: 60%;
+    padding-left: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -592,6 +607,10 @@ a {
     line-height: 116.9%;
     letter-spacing: 0.03em;
     color: #000000;
+}
+
+.section7-title-line {
+    padding-left: 292px;
 }
 
 .section7-info {
@@ -615,8 +634,26 @@ a {
 
 .section7-button {
     padding-top: 3%;
+    width: fit-content;
 }
 
+.interesting-button {
+    width: 265px;
+    height: 60px;
+    border: none;
+    background: url(../images/section7/button.svg) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.interesting-button:hover {
+    width: 265px;
+    height: 60px;
+    border: none;
+    background: url(../images/section7/button-active.svg) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
 
 .section7-point-block {
     display: flex;
@@ -639,8 +676,9 @@ a {
 
 .section7-right {
     width: 730px;
-    height: 985px;
+    height: 964px;
     background: url(../images/section7/woman.svg) no-repeat top center;
+    background-position-x: -54px;
 }
 
 
@@ -776,6 +814,11 @@ a {
     align-items: start;
 }
 
+.footer-info {
+    display: flex;
+}
+
+
 .footer-info,
 .footer-social-name {
     padding-top: 3%;
@@ -792,20 +835,14 @@ a {
 
 
 .footer-right {
-    padding-right: 40px;
     width: 60%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
+    gap: 25px;
+    justify-content: end;
+padding-right: 60px;
 }
 
-.footer-social-block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 
-}
 
 .footer-social-title {
     padding-left: 34px;
@@ -823,16 +860,72 @@ a {
 }
 
 .footer-social-block-item {
-    padding-top: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
     align-items: center;
-
 
 
 }
 
+
+.footer-social-icon {
+    width: fit-content;
+}
+
+.social-icon-tg {
+    width: 64px;
+    height: 64px;
+    border: none;
+    background: url(../images/footer/footer_tg.svg) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.social-icon-tg:hover {
+    width: 64px;
+    height: 64px;
+    border: none;
+    background: url(../images/footer/footer_tg_active.svg) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.social-icon-vk {
+    width: 64px;
+    height: 64px;
+    border: none;
+    background: url(../images/footer/footer_vk.svg) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.social-icon-vk:hover {
+    width: 64px;
+    height: 64px;
+    border: none;
+    background: url(../images/footer/footer_vk_active.svg) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.social-icon-youtube {
+    width: 64px;
+    height: 64px;
+    border: none;
+    background: url(../images/footer/footer_youtube.svg) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.social-icon-youtube:hover {
+    width: 64px;
+    height: 64px;
+    border: none;
+    background: url(../images/footer/footer_youtube_active.svg) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
 
 
 

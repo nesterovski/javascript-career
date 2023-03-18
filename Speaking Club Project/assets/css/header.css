@@ -38,21 +38,75 @@
 
 }
 
+
+/* меняю жирность наведения на ссылку в шапке */
+#bold-link {
+  font-weight: normal; /* нормальный вес текста ссылки */
+  transition: all 0.2s ease; /* добавление анимации изменения всех свойств */
+}
+
+#bold-link:hover {
+  color: #4E9FFF;
+}
+
 .header-social {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 
 
 
 }
 
-.social-icon {
+/* .social-icon {
   width: 25px;
   height: 25px;
   margin-left: 26px;
-  /* таким образом сделал отступ между иконками, но думаю есть лучше способ*/
+  /* таким образом сделал отступ между иконками, но думаю есть лучше способ */
 
+
+.social-icon-header-vk {
+  width: 40px;
+  height: 40px;
+  background-image: url('../icons/vk-icon.svg');
+  background-size: 100%;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.social-icon-header-vk:hover {
+  background-image: url('../icons/vk-icon-hover.svg');
+}
+
+.social-icon-header-tg {
+  width: 40px;
+  height: 40px;
+  background-image: url('../icons/tg-icon.svg');
+  background-size: 100%;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.social-icon-header-tg:hover {
+  background-image: url('../icons/tg-icon-hover.svg');
+}
+
+
+.social-icon-header-youtube {
+  width: 40px;
+  height: 40px;
+  background-image: url('../icons/youtube-icon.svg');
+  background-size: 100%;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.social-icon-header-youtube:hover {
+  background-image: url('../icons/youtube-icon-hover.svg');
 }
 
 .header-headline {
@@ -158,3 +212,5 @@
   width: 652.71px;
   height: 494.19px;
 }
+
+

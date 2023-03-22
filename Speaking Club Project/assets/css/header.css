@@ -74,6 +74,8 @@
   transition: all 0.2s ease;
   cursor: pointer;
   background-repeat: no-repeat;
+  background-position: center center;
+  
 }
 
 .social-icon-header-vk:hover {
@@ -88,6 +90,7 @@
   transition: all 0.2s ease;
   cursor: pointer;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .social-icon-header-tg:hover {
@@ -103,6 +106,7 @@
   transition: all 0.2s ease;
   cursor: pointer;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .social-icon-header-youtube:hover {
@@ -212,5 +216,4 @@
   width: 652.71px;
   height: 494.19px;
 }
-
 

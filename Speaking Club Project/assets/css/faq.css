@@ -20,7 +20,7 @@
   min-height: 100vh;
 } */
 
-.container {
+.container-faq {
   margin: 0 auto;
   padding: 4rem;
   width: 48rem;
@@ -28,10 +28,9 @@
 
 .accordion {
 margin-top: 20px;
-width: 95%;
+width: 100%;
 display: flex;
 flex-direction: column;
-gap: 10px;
 }
 
 
@@ -63,24 +62,12 @@ gap: 10px;
   color: var(--blue);
 }
 
-/* .accordion button .accordion-title {
-  padding: 1em 1.5em 1em 0;
-} */
-
-.accordion button .accordion-title {
-font-family: 'Jost';
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 112.4%;
-letter-spacing: 0.05em;
-color: #000000;
-}
 
 .accordion button .icon {
   display: inline-block;
   position: absolute;
-  top: 33px;
+  top: 50%;
+  transform: translate(0, -50%);
   right: 0;
   width: 22px;
   height: 22px;
@@ -117,10 +104,10 @@ color: #000000;
 .accordion .accordion-item button[aria-expanded="true"] .icon::after {
   width: 0;
 }
-
+/*Здесь было указано max-height:9em Такое указывать никогда не стоит, ибо уже при адаптиве текст просто залазил на другой блок, ему не хватало высоты, либо если бы мы поменяли текст на бОльший текст, то ему тоже бы не хватило высоты, поэтому ставим 100%*/
 .accordion .accordion-item button[aria-expanded="true"] + .content {
   opacity: 1;
-  max-height: 9em;
+  max-height: 100%;
   transition: all 200ms linear;
 }
 
@@ -136,15 +123,5 @@ color: #000000;
   margin: 1em 0;
 } */
 
-.content p {
-padding-top: 2%;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 124.9%;
-letter-spacing: 0.05em;
-color: #000000;
-}
 
 

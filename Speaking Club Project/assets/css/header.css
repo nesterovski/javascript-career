@@ -1,33 +1,53 @@
 .header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   /* делает возможным перенос блоков если не умещаются на экране*/
   margin-top: 21px;
 }
-
+.header__list{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.header-menu{
+  margin-right: 130px;
+}
 .header-top-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   height: 90px;
 }
-
 .header-logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
 .header-menu {
   display: flex;
   justify-content: space-between;
-  gap: 70px;
+  gap: 55px;
   align-items: center;
+}
 
-
+/* меняю жирность наведения на ссылку в шапке */
+#bold-link {
+  font-weight: normal; /* нормальный вес текста ссылки */
+  transition: all 0.2s ease; /* добавление анимации изменения всех свойств */
+}
+#bold-link:hover {
+  color: #4E9FFF;
+  transition: color .3s;
+}
+.header-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.header-menu li>a{
   font-family: 'Jost';
   font-style: normal;
   font-weight: 400;
@@ -35,37 +55,32 @@
   line-height: 106.4%;
   letter-spacing: 0.05em;
   color: #000000;
-
 }
-
-
-/* меняю жирность наведения на ссылку в шапке */
-#bold-link {
-  font-weight: normal; /* нормальный вес текста ссылки */
-  transition: all 0.2s ease; /* добавление анимации изменения всех свойств */
-}
-
-#bold-link:hover {
-  color: #4E9FFF;
-}
-
-.header-social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-
-
-
-}
-
 /* .social-icon {
   width: 25px;
   height: 25px;
   margin-left: 26px;
   /* таким образом сделал отступ между иконками, но думаю есть лучше способ */
-
-
+/*   Оставил внизу закомментированным твой код, чтобы лучше была видна разница, и картинок нужно меньше загржать и код как видишь тоже в разы меньше */
+  .social-icon-header-vk,.social-icon-header-tg,.social-icon-header-youtube {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: fill .3s;
+  }
+  .social-icon-header-tg:hover path{
+    fill: #8CD6FF;
+  }
+  .social-icon-header-vk:hover path{
+    fill: #4E9FFF;
+  }
+  .social-icon-header-youtube:hover path{
+    fill: #FE7170;
+  }
+  .social-icon-header-vk:hover path,.social-icon-header-youtube:hover path,.social-icon-header-tg:hover path{
+    transition: fill .3s;
+  }
+/* 
 .social-icon-header-vk {
   width: 40px;
   height: 40px;
@@ -80,8 +95,9 @@
 
 .social-icon-header-vk:hover {
   background-image: url('../icons/vk-icon-hover.svg');
-}
-
+transition: all .3s;
+} */
+/* 
 .social-icon-header-tg {
   width: 40px;
   height: 40px;
@@ -95,10 +111,10 @@
 
 .social-icon-header-tg:hover {
   background-image: url('../icons/tg-icon-hover.svg');
-}
+} */
 
 
-.social-icon-header-youtube {
+/* .social-icon-header-youtube {
   width: 40px;
   height: 40px;
   background-image: url('../icons/youtube-icon.svg');
@@ -111,10 +127,9 @@
 
 .social-icon-header-youtube:hover {
   background-image: url('../icons/youtube-icon-hover.svg');
-}
+} */
 
 .header-headline {
-
   font-weight: 700;
   font-size: 60px;
 }
@@ -122,24 +137,16 @@
 .header-headline span {
   color: #4E9FFF;
 }
-
-.header-middle-content {
+.container.main__container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   padding-top: 70px;
-
-
 }
-
 .header-left-content {
-
   display: flex;
   flex-flow: column;
   /* это свойство позволяет сделать блоки внутри этого контейнера друг под другом */
-
-
-
 }
 
 .header-headline {
@@ -149,15 +156,6 @@
   line-height: 70px;
   letter-spacing: 0.03em;
   text-align: left;
-
-
-  font-family: Jost;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 70px;
-  letter-spacing: 0.03em;
-  text-align: left;
-
 }
 
 .header-info {
@@ -169,7 +167,7 @@
   line-height: 32px;
   letter-spacing: 0.05em;
   text-align: left;
-
+  max-width: 410px;
 }
 
 .button-and-arrow {
@@ -181,39 +179,284 @@
 }
 
 .button-start {
-  width: 167.5px;
-  height: 63.85px;
-  background: url(../images/header/start-button.svg) no-repeat center center;
-  background-size: auto;
-  background-size: cover;
+  width: 166px;
+  height: 64px;
   cursor: pointer;
 }
-
-.button-start:hover {
-  width: 167.5px;
-  height: 63.85px;
-  background: url(../images/header/start-button-active.svg) no-repeat center center;
-  background-size: auto;
-  background-size: cover;
-  cursor: pointer;
-
+.button-start:last-child path,
+.button-start:hover path:first-child{
+  transition: fill .3s;
 }
-
+.button-start:hover:last-child path {
+  fill: white;
+  transition: fill .3s;
+}
+.button-start:hover path:first-child {
+  fill: #0075FF;
+  transition: fill .3s;
+}
 .header-arrow {
-  width: 139.94px;
-  height: 91.33px;
   margin-left: 64.26px;
 }
-
 .header-right-content {
-
   display: flex;
-
-
 }
-
 .header-students {
-  width: 652.71px;
-  height: 494.19px;
+max-width: 100%;
+width: 654px;
+height: 495px;
+}
+.header__burger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  height: 45px;
+  width: 45px;
+}
+@media(max-width:1367px){
+  .container.main__container{
+    padding-top: 52px;
+  }
+.header-headline {
+  font-size: 47px;
+  line-height: 54px;
+}
+  .header-students {
+    width: 473px;
+    height: 358px;
+    }
+    .header-info{
+      font-size: 22px;
+      line-height: 30px;
+      max-width: 390px;
+      margin-top: 36px;
+      margin-bottom: 35px;
+    }
+    .button-start {
+      width: 156px;
+      height: 58px;
+    }
+    .header-arrow{
+      margin-left: 55px;
+    }
+    .head-arrow{
+      width: 125px;
+      height: 85px;
+    }
+    .header-logo img{
+      width: 148px;
+      height: 55px;
+        }
+}
+@media(max-width:1200px){
+  .container.main__container{
+    padding-top: 36px;
+  }
+  .header-students {
+    width: 419px;
+    height: 316px;
+    }
+    .header-headline {
+      font-size: 44px;
+      line-height: 49px;
+    }
+    .header-info{
+      font-size: 20px;
+      line-height: 26px;
+      max-width: 350px;
+      margin-top: 31px;
+      margin-bottom: 30px;
+    }
+    .button-start {
+      width: 146px;
+      height: 52px;
+    }
+    .header-arrow{
+      margin-left: 46px;
+    }
+    .head-arrow{
+      width: 121px;
+      height: 81px;
+    }
+    .header-logo img{
+      width: 132px;
+      height: 49px;
+    }
+    .header-menu {
+      margin-right: 60px;
+      gap: 35px;
+    }
+}
+@media(max-width:992px){
+  .container.main__container{
+    padding-top: 18px;
+  }
+  .header-students {
+    width: 351px;
+    height: 265px;
+    }
+    .header-headline {
+      font-size: 39px;
+      line-height: 42px;
+    }
+    .header-info{
+      font-size: 18px;
+      line-height: 28px;
+      max-width: 300px;
+      margin-top: 26px;
+      margin-bottom: 25px;
+    }
+    .button-start {
+      width: 136px;
+      height: 44px;
+    }
+    .header-arrow{
+      margin-left: 40px;
+    }
+    .head-arrow{
+      width: 114px;
+      height: 76px;
+    }
+    .header-logo img{
+      width: 112px;
+      height: 41px;
+    }
+    .header-menu {
+      margin-right: 15px;
+          gap: 15px;
+    }
+    .social-icon-header-vk,.social-icon-header-tg,.social-icon-header-youtube {
+      width: 30px;
+      height: 30px;
+    }
+    .header-social{
+      gap: 10px;
+    }
+}
+@media(max-width:767px){
+  .container.main__container{
+    padding-top: 0px;
+  }
+  .header__burger {
+    display: block;
+}
+.header__burger{
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  z-index: 120000;
+}
+.header__burger span{
+  position: absolute;
+  background-color: black;
+  left: 0;
+  top: 9px;
+  width: 100%;
+  height: 2px;
+  transition: all .3s ease 0s;
+}
+.header__burger::before,
+.header__burger::after{
+  content: '';
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: all .3s ease 0s;
+}
+.header__burger::before{
+  top:0;
+}
+.header__burger::after{
+  bottom:0;
+}
+.header__burger.active::before{
+  transform: rotate(45deg);
+  top: 9px;
+}
+.header__burger.active::after{
+  transform: rotate(-45deg);
+  bottom:9px;
+}
+.header__burger.active span{
+  transform: scale(0);
+}
+.header__list.active {
+    transform: translateX(0);
+    z-index: 11;
+    transition: all 0.3s ease;
+}
+  .header__list {
+    width: 100%;
+    position: fixed;
+    line-height: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    top: 0px;
+    left: 0;
+    transform: translateX(-100%);
+    height: 100vh;
+    background-color: white;
+    color: white;
+    transition: transform 0.3s ease;
+}
+.header-menu{
+  margin: 0px 0px 0px 0px;
+  flex-direction: column;
+}
+.header{
+  margin-top: 0px;
+}
+  .header-logo img{
+width: 91px;
+height: 33px;
+  }
+  .container.main__container{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .header-students {
+    width: 277px;
+    height: 209px;
+    margin-bottom: 21px;
+    }
+    .header-headline {
+      font-size: 34px;
+      line-height: 36px;
+    }
+    .header-info{
+      font-size: 17px;
+      line-height: 23px;
+      max-width: 180px;
+      margin-top: 21px;
+      margin-bottom: 20px;
+    }
+    .header-left-content{
+      max-width: 100%;
+    }
+    .button-start {
+      width: 125px;
+      height: 48px;
+    }
+    .header-arrow{
+      position: absolute;
+      top: -83%;
+      right: 0px;
+      margin-left: 26px;
+    }
+    .head-arrow{
+      width: 108px;
+      height: 70px;
+      transform: rotate(-12.82deg);
+    }
+    .button-and-arrow{
+      position: relative;
+    }
 }
 

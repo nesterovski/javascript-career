@@ -1,3 +1,10 @@
+/* Подключаем шрифты в современном формате */
+
+@font-face{font-family:Jost;font-display:swap;src:url("../fonts/Jost-Bold.woff2") format("woff2"), url("../fonts/Jost-Bold");font-weight:700;font-style:normal;}
+@font-face{font-family:Jost;font-display:swap;src:url("../fonts/Jost-Regular.woff2") format("woff2"), url("../fonts/Jost-Regular");font-weight:400;font-style:normal;}
+@font-face{font-family:Jost;font-display:swap;src:url("../fonts/Jost-SemiBold.woff2") format("woff2"), url("../fonts/Jost-SemiBold");font-weight:600;font-style:normal;}
+
+
 * {
     scroll-behavior: smooth;
 }
@@ -12,44 +19,36 @@ a {
     text-decoration: none;
     color: #000000;
 }
-
-
+/*Блокирует прокрутку при открытии бургер меню на мобилке*/
+body.lock{
+    overflow: hidden;
+}
 
 /* тут начинается вторая секция (что я получу) */
-
+/* background-color стоит задавать секции, как и отступы до других секций, а не элементам внутри секции */
+.section-get{
+    overflow: hidden;
+    padding-top: 70px;
+    margin-top: 100px;
+    background-color: #F5F5F5;
+}
+/* Стоит задавать размеры всем иконкам и картинкам */
+.section2-img{
+    width: 417px;
+    height: 352px;
+}
 .section2-headline-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    background-color: #F5F5F5;
 }
-
-.section2-headline {
-    padding-top: 70px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 116.9%;
-    letter-spacing: 0.03em;
-    color: #000000;
-}
-
-
-
-
 .section2 {
     display: flex;
     flex-wrap: wrap;
-    background-color: #F5F5F5;
     width: 100%;
     padding-bottom: 5%;
 }
-
-
-
 .section2-block {
     display: flex;
     justify-content: center;
@@ -58,22 +57,18 @@ a {
     flex-direction: column;
     margin-top: 35px;
 }
-
-
 .section2-block-image-image {
     width: 100px;
     height: 100px;
 }
-
 .section2-block-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .section2-block-headline {
-    padding-bottom: 15px;
+    padding-bottom: 18px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 700;
@@ -81,7 +76,6 @@ a {
     line-height: 112.4%;
     letter-spacing: 0.05em;
     color: #000000;
-    
 }
 
 .section2-block-description {
@@ -93,10 +87,110 @@ a {
     text-align: center;
     letter-spacing: 0.05em;
     color: #000000;
-
 }
 
-
+@media(max-width:1367px){
+    .section-get{
+        margin-top: 75px;
+        padding-top: 64px;
+    }
+    .section2-img{
+        width: 355px;
+        height: 301px;
+    }
+    .section2-block-headline {
+        font-size: 34px;
+        line-height: 37px;
+    }
+    .section2-block-description {
+        font-size: 21px;
+        line-height: 26px;
+    }
+    .section2-headline-underline svg{
+        width: 323px;
+    }
+}
+@media(max-width:1200px){
+    .section-get{
+        margin-top: 65px;
+        padding-top: 59px;
+    }
+    .section2-img{
+        width: 336px;
+        height: 285px;
+    }
+    .section2-block-headline {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .section2-block-description {
+        font-size: 19px;
+        line-height: 29px;
+    }
+    .section2-headline-underline svg{
+        width: 297px;
+    }
+}
+@media(max-width:992px){
+    .section-get{
+        margin-top: 55px;
+        padding-top: 50px;
+    }
+    .section2-img{
+        width: 313px;
+        height: 266px;
+    }
+    .section2-block-headline {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .section2-block-description {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .section2-headline-underline svg{
+        width: 265px;
+    }
+}
+@media(max-width:767px){
+    .form{
+        min-width: 100%;
+    }
+    .section-get{
+        margin-top: 54px;
+        padding-top: 44px;
+    }
+    .section2-img{
+        width: 288px;
+        height: 245px;
+    }
+    .section2-block-headline {
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .section2-block-description {
+        font-size: 17px;
+        line-height: 23px;
+    }
+    .section2{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 52px;
+    }
+    .section2-block{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .section2-block:not(:last-child){
+        margin-bottom: 19px;
+    }
+    .section2-block:first-child{
+        margin-top: 25px;
+    }
+    .section2-headline-underline svg{
+        width: 229px;
+    }
+}
 
 
 /* заголовок третьей секции (как работает клуб) */
@@ -105,36 +199,36 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 6%;
-    margin-bottom: 6%;
-
 }
-
 /* тут начинается третья секция (как работает клуб) */
+.section-work{
+margin-top: 100px;
+margin-bottom: 77px;
+}
 .section3 {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     padding-bottom: 5%;
-
 }
-
+.section3-headline-underline svg{
+    width: 627px;
+    height: 14px;
+}
 /* блок с преимуществом */
 .section3-block {
     display: flex;
     flex-direction: column;
     width: 48%;
 }
-
 .section3-image {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
-
 .section3-block-info {
     position: absolute;
     font-size: 24px;
@@ -146,9 +240,20 @@ a {
     text-align: center;
     letter-spacing: 0.05em;
     color: #000000;
-
 }
-
+.section3-image-dark svg,
+.section3-image-yellow svg{
+    width: 553px;
+    height: 259px;
+}
+.section3-image-red svg{
+    width: 554px;
+    height: 284px;
+}
+.section3-image-blue svg{
+    width: 554px;
+    height: 281px;
+}
 
 /* тут третья секция заканчивается заголовком итог */
 
@@ -159,63 +264,261 @@ a {
     align-items: center;
     width: 100%;
 }
-
 .section3-itog-headline {
     font-size: 60px;
     font-weight: bold;
 }
-
 .section3-itog-info {
     display: flex;
-    padding-bottom: 40px;
 }
-
 .section3-itog-arrows-left {
     padding-right: 25px;
 }
-
+.section3-itog-arrows-left svg{
+width: 105px;
+height: 131px;
+}
 .section3-itog-description {
     padding-top: 50px;
     font-size: 24px;
 }
-
 .section3-itog-arrows-right {
     padding-left: 25px;
 }
-
+.section3-itog-arrows-right svg{
+    width: 105px;
+    height: 100px;
+}
 /* тут третья секция закончилась полностью */
 
-
-
+@media(max-width:1367px){
+    .section-work{
+        margin-top: 85px;
+        margin-bottom: 74px;
+        }
+    .section3-headline-underline svg{
+        width: 497px;
+        height: 14px;
+    }
+    .section3{
+        gap: 30px;
+    }
+    .section3-block-info,.section3-itog-description{
+        font-size: 21px;
+        line-height: 23px;
+    }
+    .section3-block-info{
+        top: 105px;
+    }
+    .section3-image-dark svg,
+    .section3-image-yellow svg{
+        width: 435px;
+        height: 208px;
+    }
+    .section3-image-red svg{
+        width: 435px;
+        height: 245px;
+    }
+    .section3-image-blue svg{
+        width: 435px;
+        height: 226px;
+    }
+    .section3-itog-description{
+        padding-top: 45px;
+    }
+    .section3-itog-arrows-left svg{
+        width: 100px;
+        height: 119px;
+        }
+        .section3-itog-arrows-right svg{
+            width: 95px;
+            height: 90px;
+        }
+}
+@media(max-width:1200px){
+    .section-work{
+        margin-top: 75px;
+        margin-bottom: 68px;
+        }
+    .section3-headline-underline svg{
+        width: 457px;
+        height: 14px;
+    }
+    .section3-block-info{
+        top: 95px;
+    }
+    .section3{
+        gap: 20px;
+    }
+    .section3-block-info,.section3-itog-description{
+        font-size: 19px;
+        line-height: 21px;
+    }
+    .section3-image-dark svg,
+    .section3-image-yellow svg{
+        width: 400px;
+        height: 193px;
+    }
+    .section3-image-red svg{
+        width: 400px;
+        height: 233px;
+    }
+    .section3-image-blue svg{
+        width: 400px;
+        height: 210px;
+    }
+    .section3-itog-description{
+        padding-top: 37px;
+    }
+    .section3-itog-arrows-left svg{
+        width: 97px;
+        height: 104px;
+        }
+        .section3-itog-arrows-right svg{
+            width: 85px;
+            height: 80px;
+        }
+}
+@media(max-width:992px){
+    .section-work{
+        margin-top: 60px;
+        margin-bottom: 62px;
+        }
+    .section3-headline-underline svg{
+        width: 407px;
+        height: 14px;
+    }
+    .section3{
+        gap: 10px;
+    }
+    .section3-block-info,.section3-itog-description{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .section3-itog-description{
+        padding-top: 30px;
+    }
+    .section3-image-dark svg,
+    .section3-image-yellow svg{
+        width: 325px;
+        height: 174px;
+    }
+    .section3-image-red svg{
+        width: 325px;
+        height: 190px;
+    }
+    .section3-block-info{
+        top: 83px;
+    }
+    .section3-image-red p{
+        top: 75px;
+    }
+    .section3-image-blue svg{
+        width: 325px;
+        height: 190px;
+    }
+    .section3-itog-arrows-left svg{
+        width: 82px;
+        height: 89px;
+        }
+        .section3-itog-arrows-right svg{
+            width: 75px;
+            height: 70px;
+        }
+}
+@media(max-width:767px){
+    .section-work{
+        margin-top: 45px;
+        margin-bottom: 52px;
+        }
+    .section3{
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 20px;
+        padding-bottom: 55px;
+    }
+    .section3-block{
+        width: 100%;
+    }
+    .section3-headline-underline svg{
+        display: none;
+    }
+.section3-itog-description{
+    font-size: 17px;
+    line-height: 19px;
+    padding-top: 21px;
+}
+    .section3-block-info {
+        font-size: 17px;
+        top: 70px;
+        line-height: 19px;
+    }
+    .section3-image-dark svg,
+.section3-image-yellow svg{
+    width: 307px;
+    height: 154px;
+}
+.section3-image-red svg{
+    width: 307px;
+    height: 203px;
+}
+.section3-image-red p{
+    top: 80px;
+}
+.section3-image-blue svg{
+    width: 307px;
+    height: 168px;
+}
+.section3-itog-arrows-left svg{
+    width: 74px;
+    height: 74px;
+    }
+    .section3-itog-arrows-right svg{
+        width: 62px;
+        height: 59px;
+    }
+    .section3-itog-arrows-left {
+        position: absolute;
+        top: -15px;
+        left: 30px;
+        padding-right: 0px;
+    }
+    .section3-itog-arrows-right {
+        position: absolute;
+        top: -15px;
+        right: 40px;
+        padding-left: 0px;
+    }
+    .section3-itog{
+position: relative;
+    }
+}
 
 /* блок 4 где цена с чашкой кофе */
-
+.section-price{
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
 .section4 {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     width: 100%;
-    background-color: #F5F5F5;
-
 }
-
 .section4-left {
-    width: 40%;
+    flex: 0 0 50%;
     display: flex;
-    padding-left: 20px;
-
-
 }
-
+.section4-left img{
+width: 578px;
+height: 617px;
+}
 .section4-right {
-    width: 60%;
+    flex: 0 0 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-
 }
 
 .section4-right-headline {
@@ -263,27 +566,150 @@ a {
    
 } */
 
-.section4-right-info-enroll .enroll-button {
+.section4-right-info-enroll {
+    display: inline-block;
     width: 240px;
     height: 60px;
-    border: none;
-    background: url(../images/section4/enroll.svg) no-repeat center center;
-    background-size: cover;
     cursor: pointer;
 }
-
-.section4-right-info-enroll .enroll-button:hover {
-    width: 240px;
-    height: 60px;
-    border: none;
-    background: url(../images/section4/enroll-active.svg) no-repeat center center;
-    background-size: cover;
-    cursor: pointer;
+.section4-right-info-enroll svg>path:first-child,
+.section4-right-info-enroll svg>path:last-child{
+    transition: fill .3s;
 }
-
+.section4-right-info-enroll:hover svg>path:first-child{
+    transition: fill .3s;
+fill: #0075FF;
+}
+.section4-right-info-enroll:hover svg>path:last-child{
+    transition: fill .3s;
+    fill: white;
+    }
+    .section4-right-arrow svg{
+        display: inline-block;
+        width: 163px;
+        height: 12px;
+    }
 /* тут четвертая секция закончилась */
 
 
+@media(max-width:1367px){
+    .section4-left img{
+        width: 447px;
+        height: 478px;
+        }
+        .section4-right-info-rub{
+            font-size: 31px;
+            line-height: 35px;
+        }
+        .section4-right-info-enroll svg{
+            width: 209px;
+            height: 57px;
+            cursor: pointer;
+        }
+        .section4-right-arrow svg{
+            display: inline-block;
+            width: 148px;
+            height: 11px;
+        }
+}
+@media(max-width:1200px){
+    .section4-left img{
+        width: 408px;
+        height: 436px;
+        }
+        .section4-right-info-rub{
+            font-size: 29px;
+            line-height: 33px;
+        }
+        .section4-right-info-enroll svg{
+            width: 199px;
+            height: 54px;
+            cursor: pointer;
+        }
+        .section4-right-arrow svg{
+            display: inline-block;
+            width: 133px;
+            height: 10px;
+        }
+}
+@media(max-width:992px){
+    .section4-left img{
+        width: 359px;
+        height: 384px;
+        }
+        .section4-right-info-rub{
+            font-size: 25px;
+            line-height: 28px;
+        }
+        .section4-right-info-enroll svg{
+            width: 188px;
+            height: 51px;
+            cursor: pointer;
+        }
+        .section4-right-arrow svg{
+            display: inline-block;
+            width: 118px;
+            height: 9px;
+        }
+}
+@media(max-width:767px){
+    .section-price{
+        position: relative;
+        overflow: hidden;
+        padding-top: 43px;
+        padding-bottom: 60px;
+    }
+    .section4-left img{
+        width: 306px;
+        height: 327px;
+        position: absolute;
+        top: 1px;
+right: -25px;
+z-index: 0;
+        }
+        .title.title__section4{
+            text-align: left;
+        }
+        .section4-right-headline{
+            text-align: left;
+            padding-right: 0px;
+width: 100%;
+        }
+        .section4-right-info-rub{
+            padding-top: 21px;
+            order: 1;
+        }
+        .section4-right-info-text{
+            padding-top: 0px;
+            order: 2;
+        }
+        .section4-left{
+            flex: none;
+        }
+        .section4-right{
+            flex: 0 0 100%;
+            z-index: 1;
+        }
+        .section4-right-info{
+            width: 100%;
+        }
+        .section4-right-info-rub{
+            font-size: 22px;
+            line-height: 25px;
+        }
+        .section4-right-info-enroll svg{
+            width: 175px;
+            height: 48px;
+        }
+        .section4-right-info-enroll{
+order: 3;
+        }
+        .section4-right-arrow svg{
+            display: inline-block;
+            width: 103px;
+            height: 8px;
+        }
+}
 
 
 
@@ -293,23 +719,19 @@ a {
 .section5 {
     display: flex;
     justify-content: space-around;
-    
-
 }
-
 .section5-left {
-    padding-left: 60px;
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
 }
-
+.section5-block-title.title{
+    text-align: left;
+    width: 100%;
+}
 .section5-block-title {
-
     font-family: 'Jost';
     font-style: normal;
     font-weight: 700;
@@ -317,37 +739,21 @@ a {
     line-height: 116.9%;
     letter-spacing: 0.03em;
     color: #000000;
-
 }
-
 .section5-block-title span {
     color: #4E9FFF;
 }
-
-
 .section5-eugene {
     width: 100%;
     display: flex;
-    gap: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-
-
 }
-
-
 .section5-eugene-name {
     padding-top: 50px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 112.4%;
-    letter-spacing: 0.05em;
-    color: #000000;
+    padding-bottom: 0px;
 }
-
 .section5-eugene-info {
     font-family: 'Jost';
     font-style: normal;
@@ -358,7 +764,12 @@ a {
     color: #000000;
     opacity: 0.67;
 }
-
+.section5-eugene-line svg{
+    display: inline-block;
+    width: 163px;
+    height: 12px;
+    margin-bottom: 10px;
+}
 .section5-pluses {
     width: 100%;
     display: flex;
@@ -367,25 +778,20 @@ a {
     align-items: start;
     gap: 30px;
     padding-top: 36px;
-
 }
-
 .section5-pluses-block {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 }
-
 .section5-pluses-point {
+    padding-top: 10px;
     display: flex;
     padding-right: 10px;
-    
 }
-
 .section5-pluses-point img {
     width: 10px;
-    
 }
-
 .section5-pluses-text {
     font-family: 'Jost';
     font-style: normal;
@@ -395,58 +801,223 @@ a {
     letter-spacing: 0.05em;
     color: #000000;
 }
-
+/*Здесь */
 .section5-right {
+    position: absolute;
+    top: 0;
+    right: -140px;
     display: flex;
-    width: 930px;
+    width: 960px;
     height: 960px;
-    background: url(../images/section5/eugene.svg) no-repeat top center;
+    background: url(../images/section5/author.png) no-repeat top center;
     background-position-y: 100px;
     background-position-x: -33px;
 }
-
-
+.section-author{
+    padding-top: 105px;
+    padding-bottom: 125px;
+    position: relative;
+    overflow: hidden;
+}
+.author__lines{
+    width: 133px;
+    height: 98px;
+    display: inline-block;
+    position: absolute;
+    top: 330px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0) 
+}
+.author__img{
+    display: none;
+}
 
 /* тут заканчивается пятая секция (об авторе) */
 
+@media(max-width:1367px){
+    .section5-pluses-point{
+        padding-top: 5px;
+    }
+    .section-author{
+        padding-top: 95px;
+        padding-bottom: 80px;
+    }
+    .section5-eugene-line svg{
+        display: inline-block;
+        width: 148px;
+        height: 11px;
+    }
+    .section5-eugene-info{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .author__lines{
+        width: 112px;
+        height: 82px;
+        top: 270px;
+    }
+    .section5-right {
+        top: 140px;
+        right: 0px;
+        width: 675px;
+        height: 760px;
+        background: none;
+    }
+    .author__img{
+        display: block;
+    }
+}
+@media(max-width:1200px){
+    .section-author{
+        padding-top: 85px;
+        padding-bottom: 60px;
+    }
+    .section5-eugene-line svg{
+        display: inline-block;
+        width: 105px;
+        height: 10px;
+    }
+    .section5-eugene-info{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .author__lines{
+        width: 89px;
+        height: 77px;
+    }
+    .section5-right {
+        width: 588px;
+        height: 623px;
+        right: -70px;
+    }
+}
+@media(max-width:992px){
+    .section-author{
+        padding-top: 65px;
+        padding-bottom: 30px;
+    }
+    .section5-eugene-line svg{
+        display: inline-block;
+        width: 118px;
+        height: 9px;
+    }
+    .section5-eugene-info{
+        font-size: 16px;
+        line-height: 20px;
+    }
+     .author__lines{
+        width: 98px;
+        height: 71px;
+    }
+    .section5-right,.author__img {
+        top: 200px;
+        width: 480px;
+        height: 526px;
+    }
+.section5-pluses-text{
+    max-width: 385px;
+}
+}
 
-
-
-
-
-
+@media(max-width:767px){
+    .section-author{
+        padding-top: 45px;
+        padding-bottom: 330px;
+        position: relative;
+    }
+    .section5-eugene-name{
+        padding-top: 30px;
+    }
+    .section5-eugene{
+        gap: 0px;
+    }
+    .section5-eugene-line svg{
+        display: inline-block;
+        width: 109px;
+        height: 8px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+    .section5-pluses{
+        padding-top: 25px;
+        gap: 27px;
+    }
+    .section5-eugene-info{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .author__lines{
+        width: 89px;
+        height: 65px;
+        transform: rotate(34.37deg);
+        left: 70%;
+        top: 215px;
+    }
+    .section5-right {
+        position: static;
+        background-position-y: 0px;
+        background-position-x: -32px;
+        background-size: cover;
+    }
+    .section5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section5-right{
+       height: 0px;
+    }
+}
+@media(max-width:550px){
+    .author__img{
+        top: initial;
+        bottom: -100px;
+        width: 500px;
+        height: 420px;
+        position: absolute;
+        left: initial;
+    }
+}
+@media(max-width:420px){
+    .author__img{
+        top: initial;
+        bottom: -100px;
+        width: 400px;
+        height: 420px;
+        position: absolute;
+        left: 0px;
+    }
+}
 
 /* тут начинается шестая секция (контактная форма) */
-
-
-
-
+.section-contacts{
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
 .section6 {
     display: flex;
     gap: 15px;
     width: 100%;
-    background-color: #F5F5F5;
-    
 }
-
 .section6-left {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-
+    flex: 0 0 50%;
 }
-
-
-
+.section6-left img{
+    width: 675px;
+    height: 675px;
+    object-fit: cover;
+}
 .section6-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5%;
-    width: 50%;
-
+    flex: 0 0 35%;
 }
 
 .section6-application {
@@ -454,7 +1025,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .section6-headline {
@@ -462,35 +1033,22 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
-
-.section6-title {
-    padding-right: 95px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 116.9%;
-    letter-spacing: 0.03em;
-    color: #000000;
+.section6-title.title {
+text-align: left;
 }
-
 .section6-line {
     padding-top: 5px;
-    padding-right: 135px;
+    width: 208px;
+    height: 11px;
 }
-
-
-
 .section6-userdata-options {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
 }
-
-
 .section6-userdata-options-where {
     width: 100%;
     padding-top: 20px;
@@ -502,14 +1060,12 @@ a {
     letter-spacing: 0.05em;
     color: #888888;
 }
-
 .section6-userdata-options-social {
     display: flex;
     gap: 10px;
     width: 100%;
     margin: 0 0 20px 0;
 }
-
 .section6-userdata-options-media {
     display: flex;
     gap: 5px;
@@ -523,11 +1079,9 @@ a {
     letter-spacing: 0.05em;
     color: #232323;
 }
-
 .section6-userdata-options-media input {
     cursor: pointer;
 }
-
 .section6-userdata input {
     width: 357px;
     border: none;
@@ -538,9 +1092,25 @@ a {
     font-size: 21px;
     line-height: 124.9%;
     letter-spacing: 0.05em;
+    color: black;
+}
+.section6-userdata input::placeholder{
     color: #888888;
 }
-
+.section6-userdata{
+    position: relative;
+}
+.section6-userdata::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-bottom: 1px solid #000000;
+}
+.section6-userdata input:focus{
+    color: black;
+}
 .form-line-active input:focus, .form-line-active textarea:focus {
     border: 1px solid green !important;
     box-shadow: 0 0 3px green !important;
@@ -556,110 +1126,281 @@ a {
 .section6-userdata-submit {
     width: fit-content;
 }
-
-.section6-userdata-submit button {
+.section6-userdata-submit button{
+    padding: 0px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.section6-userdata-submit button svg {
     width: 221px;
     height: 65px;
-    border: none;
-    background: url(../images/section6/application-button.svg) no-repeat center center;
-    background-size: cover;
     cursor: pointer;
 }
-
-.section6-userdata-submit button:hover {
-    background: url(../images/section6/application-button-active.svg) no-repeat center center;
-    background-size: cover;
-    
+.section6-userdata-submit button svg>path:first-child,
+.section6-userdata-submit button:hover svg>path:last-child {
+    transition: fill .3s;
+    }
+.section6-userdata-submit button:hover svg>path:first-child {
+fill: #0075FF;
+transition: fill .3s;
 }
-
+.section6-userdata-submit button:hover svg>path:last-child {
+    fill: white;
+    transition: fill .3s;
+    }
+/* Кастомные чекбоксы  */
+input[type=checkbox] {
+    border-radius: 0px;
+    position: relative;
+      border: 1.5px solid #000000;
+      background: none;
+      cursor: pointer;
+      line-height: 0;
+      margin: 0 .6em 0 0;
+      outline: 0;
+      padding: 0 !important;
+      vertical-align: text-top;
+      height: 16px;
+      width: 16px;
+      -webkit-appearance: none;
+    opacity: 1;
+  }
+  input[type=checkbox]:hover {
+    opacity: 1;
+  }
+  input[type=checkbox]:checked:before {
+    background-color: transparent;
+    opacity: 1;
+  }
+  input[type=checkbox]:checked{
+    border: 1.2px solid #0075FF;
+  }
+  input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 4px;
+    height: 10px;
+    border: 1.2px solid #0075FF;
+    border-width: 0 2px 2px 0;
+    margin: -1px -1px 0 -1px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+  }
 
 /* тут заканчивается шестая секция (контактная форма) */
 
 
-
-
+@media(max-width:1367px){
+    .section6-left img{
+        width: 575px;
+        height: 575px;
+        object-fit: cover;
+    }
+    .section6-userdata input,.section6-userdata-options-where{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .section6-userdata-submit button svg {
+        width: 192px;
+        height: 60px;
+    }
+    .section6-line img{
+        width: 210px;
+        height: 10px;
+            }
+}
+@media(max-width:1200px){
+    .section6-left img{
+        width: 475px;
+        height: 475px;
+        object-fit: cover;
+    }
+    .section6-userdata input,.section6-userdata-options-where{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .section6-userdata-submit button svg {
+        width: 180px;
+        height: 55px;
+    }
+    .section6-line img{
+        width: 143px;
+        height: 12px;
+    }
+}
+@media(max-width:992px){
+    .section6-left img{
+        width: 375px;
+        height: 375px;
+        object-fit: cover;
+    }
+    .section6-userdata input,.section6-userdata-options-where{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .section6-userdata-submit button svg {
+        width: 168px;
+        height: 50px;
+    }
+    .section6-line img{
+        width: 123px;
+        height: 12px;
+    }
+    .section6-userdata-line img{
+        min-width: 100%;
+        max-width: 272px;
+    }
+}
+@media(max-width:767px){
+    .section6-line {
+        padding-top: 0px;
+    }
+    .section-contacts{
+        position: relative;
+        padding-top: 46px;
+        padding-bottom: 35px;
+    }
+    .section6-application{
+        margin-top: 28px;
+    }
+    .section6-right{
+        z-index: 1;
+    }
+    .section6-left img{
+        padding-right: 30px;
+        width: 670px;
+        height: 320px;
+        object-fit: cover;
+    }
+    .section6-line img {
+        width: 103px;
+        height: 12px;
+        margin-left: 90%;
+    }
+    .section6-userdata input,.section6-userdata-options-where{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .section6-userdata-submit button svg {
+        width: 156px;
+        height: 45px;
+    }
+    .section6{
+        flex-direction: column-reverse;
+    }
+    .section6-title.title{
+        text-align: center;
+        width: 100%;
+    }
+    .section6-application{
+        align-items: center;
+    }
+    .section6-userdata input,.section6-userdata{
+width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+    .section6-userdata-line img{
+        min-width: 100%;
+    }
+    .section6-userdata-options-where{
+        padding-top: 26px;
+    }
+    .section6-userdata-options{
+        gap: 12px;
+    }
+    .section6-userdata-options-social{
+        margin-bottom: 24px;
+    }
+}
 
 /* тут начинается седьмая секция (реклама курсов) */
 
-
-
-
 .section7 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    position: relative;
 }
-
+.section-promotion{
+    padding-top: 100px;
+    padding-bottom: 140px;
+    overflow: hidden;
+}
+.section7-right {
+    position: absolute;
+    top: -110px;
+    right: -13vw;
+    width: 730px;
+    height: 964px;
+    background: url(../images/section7/woman.png) no-repeat top center;
+    background-size: cover;
+}
 .section7-left {
     width: 60%;
-    padding-left: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    
-
 }
-
-.section7-title {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 57px;
-    /* надо 60, но не умещается на одной строке */
-    line-height: 116.9%;
-    letter-spacing: 0.03em;
-    color: #000000;
+.section7-title.title{
+    text-align: left;
+    max-width: 800px;
 }
-
-.section7-title-line {
-    padding-left: 292px;
+.section7-span svg{
+    width: 401px;
+    display: inline-block;
 }
-
 .section7-info {
-
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
-
 .section7-points {
     padding-top: 4%;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-
 .section7-points img {
+    padding-top: 5px;
     width: 10px;
 }
-
 .section7-button {
     padding-top: 3%;
     width: fit-content;
 }
-
-.interesting-button {
+.section7-button svg{
     width: 265px;
     height: 60px;
-    border: none;
-    background: url(../images/section7/button.svg) no-repeat center center;
-    background-size: cover;
     cursor: pointer;
 }
-
-.interesting-button:hover {
-    width: 265px;
-    height: 60px;
-    border: none;
-    background: url(../images/section7/button-active.svg) no-repeat center center;
-    background-size: cover;
-    cursor: pointer;
+.section7-title.title span{
+    position: relative;
 }
-
+.section7-span svg{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+.section7-button svg>path:first-child,
+.section7-button svg>path:last-child{
+    transition: fill .3s;
+}
+.section7-button:hover svg>path:first-child{
+    fill: #0075FF;
+    transition: fill .3s;
+}
+.section7-button:hover svg>path:last-child{
+    fill: white;
+    transition: fill .3s;
+}
 .section7-point-block {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
     font-family: 'Jost';
     font-style: normal;
@@ -669,68 +1410,143 @@ a {
     letter-spacing: 0.05em;
     color: #000000;
 }
-
-
-
 .section7-headline span {
     color: #FE7170
 }
-
-.section7-right {
-    width: 730px;
-    height: 964px;
-    background: url(../images/section7/woman.svg) no-repeat top center;
-    background-position-x: -54px;
+.section7-button svg{
+    width: 269px;
+    height: 64px;
 }
-
-
-
-
-
-
-
-
-
 /* тут заканчивается седьмая секция (реклама курсов) */
 
 
+@media(max-width:1367px){
+    .section7-right {
+        height: 680px;
+        right: -130px;
+        top: -75px;
+        background: url(../images/section7/woman.png) no-repeat top center;
+        background-size: cover;
+    }
+    .section-promotion{
+        padding-top: 90px;
+    }
+    .section7-span svg{
+        width: 341px;
+    }
+    .section7-button svg{
+        width: 232px;
+        height: 52px;
+    }
+    .section7-title.title{
+        max-width: 650px;
+    }
+}
+@media(max-width:1200px){
+    .section7-right {
+        right: -125px;
+    }
+    .section-promotion{
+        padding-top: 86px;
+    }
+    .section7-span svg{
+        width: 317px;
+    }
+    .section7-button svg{
+        width: 221px;
+        height: 54px;
+    }
+}
+@media(max-width:992px){
+    .section-promotion{
+        padding-top: 66px;
+        padding-bottom: 60px;
+    }
+    .section7-span svg{
+        width: 281px;
+    }
+    .section7-left{
+        width: 50%;
+    }
+    .section7-button svg{
+        width: 208px;
+        height: 51px;
+    }
+    .section7-right {
+        top: -110px;
+        right: -230px;
+        width: 683px;
+        height: 750px;
+    }
+}
+@media(max-width:767px){
+    .section-promotion{
+        position: relative;
+        padding-top: 46px;
+        padding-bottom: 361px;
+    }
+    .section7-span svg {
+        display: none;
+    }
+    .section7-button svg{
+        width: 193px;
+        height: 48px;
+    }
+    .section7-right {
+        position: absolute;
+        top: initial;
+        right: -100px;
+        bottom: -475px;
+        width: 455px;
+        height: 481px;
+        background: url(../images/section7/woman-2.png) no-repeat top center;
+        
+    }
+    .section7-left{
+        width: 100%;
+        gap: 15px;
+    }
+    .section7-points{
+        padding: 0px;
+        gap: 18px;
+    }
+    .section7{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section7-title.title{
+        max-width: 450px;
+    }
+    input[type=checkbox] {
+          height: 12px;
+          width: 12px;
+    }
+    input[type=checkbox]:before {
+        width: 2px;
+        height: 5px;
+        margin: 0px -1px 0 0px;
+      }
+}
 
 
 /* тут начинается восьмая секция (вопросы) */
 
-
-
-
+.section-faq{
+    padding-top: 97px;
+    padding-bottom: 100px;
+    background-color: #F5F5F5;
+}
 .section8 {
-    padding-left: 60px;
-    padding-bottom: 5%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #F5F5F5;
-
 }
-
 .section8-headline {
-    padding-top: 5%;
     display: flex;
     flex-direction: column;
-
 }
-
-.section8-title {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 112.4%;
-    letter-spacing: 0.05em;
-    color: #000000;
-}
-
-.section8-line {
-    width: 25%;
-    overflow: hidden;
+.section8-title.title{
+text-align: left;
 }
 
 .section8-block-faq {
@@ -780,7 +1596,6 @@ a {
 }
 
 .section8-have-question {
-
     padding-top: 5%;
     padding-bottom: 4%;
     font-family: 'Jost';
@@ -791,61 +1606,118 @@ a {
     letter-spacing: 0.05em;
     color: #0075FF;
 }
-
+.section-faq{
+min-width: 100%;
+}
+.content p {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    max-width: 1000px;
+    }
+.accordion-title.section2-block-headline{
+        font-weight: 500;
+        display: inline-block;
+        max-width: 90%;
+        padding: 0px;
+}
+.section8-line svg{
+        width: 480px;
+}
+.accordion-item:not(:last-child){
+margin-bottom: 60px;
+}
 /* тут заканчивается восьмая секция (вопросы) */
 
-
+@media(max-width:1367px){
+    .section8-line svg{
+        width: 384px;
+    }
+    .section-faq{
+        padding-top: 81px;
+        padding-bottom: 81px;
+    }
+    .accordion-item:not(:last-child){
+        margin-bottom: 40px;
+        }
+}
+@media(max-width:1200px){
+    .section8-line svg{
+        width: 355px;
+    }
+    .section-faq{
+        padding-top: 69px;
+        padding-bottom: 69px;
+    }
+    .content p{
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+    .accordion-item:not(:last-child){
+        margin-bottom: 30px;
+        }
+}
+@media(max-width:992px){
+    .section8-line svg{
+        width: 319px;
+    }
+    .section-faq{
+        padding-top: 57px;
+        padding-bottom: 57px;
+    }
+    .content p{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .accordion-item:not(:last-child){
+        margin-bottom: 20px;
+        }
+}
+@media(max-width:767px){
+    .content p{
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .section8-line svg{
+        width: 280px;
+    }
+    .section-faq{
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .accordion-item:not(:last-child){
+        margin-bottom: 0px;
+    }
+}
 
 
 /* тут начинается футер */
 
 
-.footer {
-    padding-top: 1%;
-    width: 100%;
-    height: 320px;
-    display: flex;
+.footer{
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
-
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
 .footer-left {
-    padding-left: 100px;
-    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 }
-
 .footer-info {
     display: flex;
 }
-
-
-.footer-info,
-.footer-social-name {
-    padding-top: 3%;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 122.4%;
-    letter-spacing: 0.05em;
+.footer-info.text,
+.footer-social-name.text {
     color: #888888;
 }
-
-
-
-
 .footer-right {
-    width: 60%;
     display: flex;
     gap: 25px;
-    justify-content: end;
-padding-right: 60px;
 }
-
-
-
 .footer-social-title {
     padding-left: 34px;
     width: 100%;
@@ -856,89 +1728,142 @@ padding-right: 60px;
     line-height: 122.4%;
     letter-spacing: 0.05em;
     color: #000000;
-
-
-
 }
-
 .footer-social-block-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
     align-items: center;
-
-
 }
-
-
 .footer-social-icon {
     width: fit-content;
+    margin-bottom: 15px;
 }
-
-.social-icon-tg {
+.footer-linksblock{
+    display: flex;
+    flex-direction: column;
+}
+.footer-icons{
+    display: flex;
+}
+.footer-social-block-item:not(:last-child){
+    margin-right: 39px;
+}
+.footer-logo{
+    margin-bottom: 48px;
+}
+.footer-ourlinks{
+margin-bottom: 24px;
+}
+.social-icon-tg,.social-icon-vk,.social-icon-youtube {
     width: 64px;
     height: 64px;
     border: none;
-    background: url(../images/footer/footer_tg.svg) no-repeat center center;
-    background-size: cover;
     cursor: pointer;
+    object-fit: cover;
+    transition: fill .3s;
 }
-
-.social-icon-tg:hover {
-    width: 64px;
-    height: 64px;
-    border: none;
-    background: url(../images/footer/footer_tg_active.svg) no-repeat center center;
-    background-size: cover;
-    cursor: pointer;
+.social-icon-tg:hover circle{
+    fill: #57BDF5;
+    transition: fill .3s;
 }
-
-.social-icon-vk {
-    width: 64px;
-    height: 64px;
-    border: none;
-    background: url(../images/footer/footer_vk.svg) no-repeat center center;
-    background-size: cover;
-    cursor: pointer;
+.social-icon-tg:hover path{
+    fill: white;
+    transition: fill .3s;
 }
-
-.social-icon-vk:hover {
-    width: 64px;
-    height: 64px;
-    border: none;
-    background: url(../images/footer/footer_vk_active.svg) no-repeat center center;
-    background-size: cover;
-    cursor: pointer;
+.social-icon-vk:hover circle{
+    fill: #2781EC;
+    transition: fill .3s;
 }
-
-.social-icon-youtube {
-    width: 64px;
-    height: 64px;
-    border: none;
-    background: url(../images/footer/footer_youtube.svg) no-repeat center center;
-    background-size: cover;
-    cursor: pointer;
+.social-icon-vk:hover path{
+    fill: white;
+    transition: fill .3s;
 }
-
-.social-icon-youtube:hover {
-    width: 64px;
-    height: 64px;
-    border: none;
-    background: url(../images/footer/footer_youtube_active.svg) no-repeat center center;
-    background-size: cover;
-    cursor: pointer;
+.social-icon-youtube:hover circle{
+    fill: #EA4948;
+    transition: fill .3s;
 }
-
-
-
-
-
+.social-icon-youtube:hover path{
+    fill: white;
+    transition: fill .3s;
+}
 
 /* тут заканчивается футер */
 
 
 
 
+@media(max-width:1367px){
+    .footer{
+    padding-top: 110px;
+    padding-bottom: 117px;
+}
+    .footer-logo img{
+        height: 52px;
+    }
+}
+@media(max-width:1200px){
+    .footer{
+    padding-top: 90px;
+    padding-bottom: 99px;
+}
+    .footer-logo img{
+        height: 47px;
+    }
+}
+@media(max-width:992px){
+    .footer{
+    padding-top: 70px;
+    padding-bottom: 81px;
+}
+    .footer-logo img{
+        height: 40px;
+    }
+}
+@media(max-width:767px){
+    .footer{
+        padding-top: 49px;
+        padding-bottom: 63px;
+    }
+    .social-icon-tg,.social-icon-vk,.social-icon-youtube {
+        width: 58px;
+        height: 58px;
+    }
+    .footer-ourlinks{
+        display: none;
+    }
+    .footer-flex{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer-right{
+        margin-bottom: 38px;
+    }
+    .footer-left{
+        width: 100%;
+        align-items: flex-start;
+    }
+    .footer-social-block-item:not(:last-child){
+        margin-right: 50px;
+    }
+    .footer-logo img{
+        height: 33px;
+    }
+    .footer-logo{
+        margin-bottom: 16px;
+    }
+}
+@media(max-width:300px){
+    .footer-social-block-item:not(:last-child){
+        margin-right: 0px;
+    }
+    .footer-linksblock,.footer-right{
+        width: 100%;
+    }
+    .footer-icons{
+        width: 100%;
+justify-content: space-between;
+    }
+}
 
 
 
@@ -950,6 +1875,7 @@ padding-right: 60px;
 
 /* 
     
+
     
 советы::
 
@@ -962,7 +1888,167 @@ margin 0 auto ------ нужен чтобы выравнить по середи�
 
 */
 
+/*По поводу стилей никто не пишет размеры 38.6px, всегда округляют в большую сторону и пишут 39px, в крайнем случае - 38.5px*/
+/* Здесь важный момент - в макете заголовки имеют одинаковые стили, значит задаем один общий класс заголовкам - title и один раз этому классу задаем стили, таким образом уменьшаем код в разы! Тебе может не много пришлось дублировать кода, однако если вместе с адаптивом, где на каждое разрешение нужно писать изменение размеров шрифта и line-height, код увеличивается ооооочень сильно и писать это значительно дольше. Зачастую в макетах много одинаковых по структуре блоков, тогда мы добавляем для них один класс и пишем для этого класса стили. Поэтому не стоит задавать таким повторяющимся элементам отступы, ибо отступы могут отличаться, а вот стили одинаковые, так что отступы задаем соседним элементам */
+.title{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 116.9%;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-align: center;
+}
+.text{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 124.9%;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.container {
+	max-width: 1470px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+@media(max-width:1367px){
+	.container {
+		max-width: 1150px;
+	}
+    .title{
+        font-size: 47px;
+        line-height: 57px;
+    }
+    .text{
+        font-size: 21px;
+        line-height: 23px;
+    }
+}
+@media(max-width:1200px){
+	.container {
+		max-width: 1045px;
+	}
+    .title{
+        font-size: 44px;
+        line-height: 54px;
+    }
+    .text{
+        font-size: 19px;
+        line-height: 21px;
+    }
+}
+@media(max-width:992px){
+	.container {
+		max-width: 750px;
+	}
+    .title{
+        font-size: 39px;
+        line-height: 49px;
+    }
+    .text{
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+@media(max-width:767px){
+	.container {
+		max-width: none;
+        padding: 0px 30px;
+	}
+    .title{
+        font-size: 34px;
+        line-height: 44px;
+    }
+    .text{
+        font-size: 17px;
+        line-height: 19px;
+    }
+}
 
+.section8-headline,.section7-headline,.section3-headline-block,.section2-headline-block,.section6-headline{
+    transform: translate(0px,-120%);
+    opacity: 0;
+    transition: all .9s ease 0s;
+}
+.section8-headline._active,.section7-headline._active,.section3-headline-block._active,.section2-headline-block._active,.section6-headline._active{
+    transform: translate(0px,0px);
+    opacity: 1;
+    transition: all .9s ease 0s;
+}
+.section2-block.first,.section2-block.third{
+    transform: translate(-120%,0px);
+    opacity: 0;
+    transition: all .9s ease 0s;
+}
+.section2-block.second,.section2-block.fourth{
+    transform: translate(120%,0px);
+    opacity: 0;
+    transition: all .9s ease 0s;
+}
+.section2-block.first._active,.section2-block.third._active{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+.section2-block.second._active,.section2-block.fourth._active{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+.section4-left img{
+    transform: translate(-120%,0px);
+    opacity: 0;
+    transition: all .9s ease 0s;
+}
+.section4-right{
+    transform: translate(120%,0px);
+    opacity: 0;
+    transition: all .9s ease 0s;
+}
+.section4-left._active img{
+    transform: translate(25px,1px);
+    opacity: 1;
+}
+.section4-right._active{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+.section6-left img{
+    transform: translate(-120%,0px);
+    opacity: 0;
+    transition: all .9s ease 0s;
+}
+.section6-left._active img{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+.section5-left{
+    transform: translate(-120%,0px);
+    opacity: 0;
+    transition: all .9s ease 0s;
+}
+.section5-left._active{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+.section-author._active svg>path,.header-arrow._active svg>path{
+    stroke-width: 1;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 4s linear forwards;
+}
+.section-work._active svg>path{
+    stroke-width: 0.5;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: draw 3s linear forwards;
+}
+@keyframes draw {
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
 
 /* медиа запросы для телефонов */
 @media only screen and (max-width: 480px) {

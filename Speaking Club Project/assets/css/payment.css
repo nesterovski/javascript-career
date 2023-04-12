@@ -172,10 +172,28 @@
     background-color: #fbf6f7;
     background-image: linear-gradient(to bottom, #fbf6f7, #fff);
     border-radius: 2em;
-    block-size: 620px;
+    block-size: 680px;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
     inline-size: 375px;
     overflow: auto;
     padding: 2em;
   }
   
+
+  .pay-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+
+  }
+
+  .return-main a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .havequestion a  {
+    text-decoration: none;
+    color: black;
+
+  }

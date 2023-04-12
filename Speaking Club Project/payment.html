@@ -26,14 +26,15 @@
       <h1>Оплата</h1>
     </header>
   
-    <form action="https://httpbin.org/post" class="form" method="POST">
+    <form action="https://yoomoney.ru/quickpay/fundraise/button?billNumber=f3tpQgSG3L8.230407" class="form" method="POST" target="_blank">
       <div>
         <h2>Наименование</h2>
   
         <div class="card">
           <address>
-            Билет<br />
-            Участие в языковом клубе<br />
+            Билет-участие в языковом клубе.<br />
+            <br />
+            ВАЖНО: напишите в телеграм сразу после оплаты.<br />
             
           </address>
         </div>
@@ -77,7 +78,7 @@
             </tr> -->
             <tr>
               <td>Скидка</td>
-              <td align="right">150₽</td>
+              <td align="right">100₽</td>
             </tr>
             <!-- <tr>
               <td>Итоговая</td>
@@ -94,13 +95,19 @@
       </div>
   
       <div>
-        <button class="button button--full" type="submit"><svg class="icon">
+        <!-- <button class="button button--full"><svg class="icon">
             <use xlink:href="#icon-shopping-bag" />
-          </svg>Оплатить</button>
-      </div>
+          </svg>Оплатить</button> -->
 
-      <div><p>вернуться на сайт</p></div>
+          <iframe src="https://yoomoney.ru/quickpay/fundraise/button?billNumber=f3tpQgSG3L8.230407&" width="330" height="50" frameborder="0" allowtransparency="true" scrolling="no"></iframe>​
+      </div>
     </form>
+
+    <div class="pay-info">
+      <div class="return-main"><a target="_blank" href="index.html"><p>вернуться на сайт</p></a></div>
+      <div class="havequestion"><a target="_blank" href="https://t.me/bastard"><p>у меня вопрос</p></a></div>
+    </div>
+
   </div>
   
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none">

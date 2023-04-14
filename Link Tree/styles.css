@@ -95,3 +95,80 @@ a {
     width: 44px;
     height: 44px;
 }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+
+  a:hover, a:focus {
+    color: rgb(200,200,200);
+  }
+  
+  .share-button:hover, .share-button:focus, .tile-share-button:hover, .tile-share-button:focus {
+    transform: scale(1.05);
+  }
+  
+  .share-button:active, .tile-share-button:active {
+    transform: scale(0.95);
+  }
+
+  :root {
+    --bg-color: rgb(10,10,10);
+    --text-color: rgb(240,240,240);
+    --tile-bg-color: rgb(37,37,37);
+    --tile-hover-bg-color: rgb(45,45,45);
+    --button-bg-color: rgb(240,240,240);
+    --button-hover-bg-color: rgb(220,220,220);
+    --button-active-bg-color: rgb(200,200,200);
+    --button-size: 40px;
+    --tile-button-size: 44px;
+    --tile-radius: 17px;
+    --image-size: 96px;
+    --image-radius: 48px;
+    --header-padding: 12px;
+    --container-width: 91%;
+    --container-max-width: 680px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-family: Verdana, Tahoma, sans-serif;
+  }
+  
+  header {
+    width: 95%;
+    max-width: 788px;
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--header-padding);
+    margin-top: 15px;
+  }
+  
+  .share-button {
+    width: var(--button-size);
+    height: var(--button-size);
+    border-radius: 20px;
+    background-color: var(--button-bg-color);
+  }
+  
+  .share-button svg {
+    margin-left: 12px;
+    margin-top: 10px;
+    color: rgb(0,0,0);
+  }
+  
+  .container {
+    width: var(--container-width);
+    max-width: var(--container-max-width);
+    margin: 10px;
+    display: flex;
+    flex-direction:
+  }

@@ -32,15 +32,17 @@ header {
     color: rgb(0,0,0);
 }
 
-.container {
+/* .container {
     width: 91%;
     max-width: 680px;
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+} */
+p{
+  font-size: 16px;
 }
-
 h1 {
     font-size: 20px;
     margin-bottom: 30px;
@@ -57,6 +59,7 @@ a {
     margin: 7px;
     border-radius: 17px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -91,9 +94,10 @@ a {
 }
 
 .icon {
-    margin: 4px 8px;
+margin: 0px 8px;
     width: 44px;
     height: 44px;
+    object-fit: cover;
 }
 
 *, *::before, *::after {
@@ -143,14 +147,14 @@ a {
     font-family: Verdana, Tahoma, sans-serif;
   }
   
-  header {
+/*   header {
     width: 95%;
     max-width: 788px;
     display: flex;
     justify-content: flex-end;
     padding: var(--header-padding);
     margin-top: 15px;
-  }
+  } */
   
   .share-button {
     width: var(--button-size);
@@ -166,11 +170,36 @@ a {
   }
   
   .container {
-    width: var(--container-width);
+    width: 100%;
     max-width: var(--container-max-width);
-    margin: 10px;
+    margin: 0 auto;
+    padding: 0px 15px;
     display: flex;
-    flex-direction:
+    flex-direction: column;
+    align-items: center;
   }
-
+  @media(max-width:1367px){
+    header{
+      margin-top: 10px;
+    }
+    h1{
+      margin-bottom: 20px;
+    }
+  }
+@media(max-width:767px){
+  .container {
+    min-width: 100%;
+    max-width: none;
+  }
+  h1{
+    font-size: 18px;
+  }
+  .image-container{
+    width: 76px;
+    height: 76px;
+  }
+  p{
+    font-size: 14px;
+  }
+}
   
